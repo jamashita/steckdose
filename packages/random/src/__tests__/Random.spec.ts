@@ -1,19 +1,11 @@
 import { Random } from '../Random';
 
 const randomString = (length: number): Promise<string> => {
-  return new Promise<string>((resolve: (value: (string)) => void) => {
-    setImmediate(() => {
-      resolve(Random.string(length));
-    });
-  });
+  return Promise.resolve(Random.string(length));
 };
 
 const randomInt = (min: number, max: number): Promise<number> => {
-  return new Promise<number>((resolve: (value: (number)) => void) => {
-    setImmediate(() => {
-      resolve(Random.integer(min, max));
-    });
-  });
+  return Promise.resolve<number>(Random.integer(min, max));
 };
 
 describe('Random', () => {
