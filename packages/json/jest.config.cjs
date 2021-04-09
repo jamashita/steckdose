@@ -15,7 +15,7 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest'
   },
   moduleNameMapper: {
-    '^@jamashita/steckdose-(.*)$': '<rootDir>/../$1/src/index'
+    '^@jamashita/steckdose-(.*)$': '<rootDir>/node_modules/@jamashita/steckdose-$1/src/index'
   },
   moduleFileExtensions: [
     'js',
