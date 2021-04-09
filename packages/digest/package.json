@@ -18,13 +18,11 @@
   ],
   "scripts": {
     "build": "yarn clean && concurrently \"npm:build:*\"",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "clean": "rimraf dist && rimraf coverage",
-    "test": "jest test",
-    "update": "yarn update:upgrade && yarn update:install",
-    "update:install": "yarn install",
-    "update:upgrade": "ncu --upgrade --timeout 600000"
+    "build:cjs": "tsc -b tsconfig.cjs.json",
+    "build:esm": "tsc -b tsconfig.esm.json",
+    "clean": "concurrently \"npm:clean:*\"",
+    "clean:coverage": "rimraf coverage",
+    "clean:dist": "rimraf dist"
   },
   "dependencies": {
     "bcrypt": "5.0.1"
@@ -35,8 +33,6 @@
   },
   "engineStrict": true,
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "gitHead": "6d4296d84b72c900dcceef3378c7ce20fd82b70e"
+    "access": "public"
+  }
 }
