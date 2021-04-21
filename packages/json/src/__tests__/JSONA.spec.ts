@@ -58,7 +58,7 @@ describe('JSONA', () => {
       const obj1: ObjectLiteral = {};
       const obj2: ObjectLiteral = { obj1 };
 
-      obj1.obj2 = obj2;
+      obj1['obj2'] = obj2;
 
       await expect(JSONA.stringify(obj1)).rejects.toThrow(JSONAError);
     });
