@@ -35,5 +35,8 @@
   "dependencies": {
     "@jamashita/anden-error": "1.5.0",
     "d3-random": "2.2.2"
+  },
+  "devDependencies": {
+    "@jamashita/anden-helper": "1.5.0"
   }
 }
