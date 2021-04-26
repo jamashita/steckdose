@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-json-v1.0.1](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.0.0...@jamashita/steckdose-json-v1.0.1) (2021-04-21)
+
+
+### Bug Fixes
+
+* 🐛 redundant syntax applied ([879dbcc](https://github.com/jamashita/steckdose/commit/879dbccdd19dfee4f14d2f5a97f73c65de9a6b01))
+
 # @jamashita/steckdose-json-v1.0.0 (2021-04-10)
 
 
