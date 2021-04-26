@@ -22,7 +22,8 @@
     "build:esm": "tsc -b tsconfig.esm.json",
     "clean": "concurrently \"npm:clean:*\"",
     "clean:coverage": "rimraf coverage",
-    "clean:dist": "rimraf dist"
+    "clean:dist": "rimraf dist",
+    "test": "jest test"
   },
   "dependencies": {
     "bcrypt": "5.0.1"
