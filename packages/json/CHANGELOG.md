@@ -1,3 +1,11 @@
+# [@jamashita/steckdose-json-v1.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.1.0...@jamashita/steckdose-json-v1.2.0) (2021-05-17)
+
+
+### Features
+
+* 🎸 setImmediate -> setTimeout ([3850bb3](https://github.com/jamashita/steckdose/commit/3850bb391b850915dc3d6d75fa73cadf04d96e4d))
+* 🎸 update ([9f5e2c9](https://github.com/jamashita/steckdose/commit/9f5e2c9ea14e2174f401e1fde3f84776b86e34dd))
+
 # [@jamashita/steckdose-json-v1.1.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.0.1...@jamashita/steckdose-json-v1.1.0) (2021-04-26)
 
 
