@@ -26,8 +26,8 @@
     "test": "jest test"
   },
   "dependencies": {
-    "@jamashita/anden-error": "1.9.0",
-    "d3-random": "2.2.2"
+    "@jamashita/anden-error": "1.10.0",
+    "d3-random": "3.0.1"
   },
   "devDependencies": {
     "@jamashita/anden-helper": "1.6.0"
