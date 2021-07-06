@@ -1,10 +1,10 @@
 {
-  "name": "@jamashita/steckdose-digest",
-  "version": "1.1.0",
+  "name": "@jamashita/steckdose-wait",
+  "version": "1.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:jamashita/steckdose.git/packages/digest"
+    "url": "git@github.com:jamashita/steckdose.git/packages/wait"
   },
   "license": "MIT",
   "author": "jamashita <jamashita@arachnid.xyz>",
@@ -24,9 +24,6 @@
     "clean:coverage": "rimraf coverage",
     "clean:dist": "rimraf dist",
     "test": "jest test"
-  },
-  "dependencies": {
-    "bcrypt": "5.0.1"
   },
   "engines": {
     "node": ">= 12.0.0",
