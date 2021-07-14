@@ -1,3 +1,13 @@
+# [@jamashita/steckdose-random-v1.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v1.2.0...@jamashita/steckdose-random-v1.3.0) (2021-07-06)
+
+
+### Features
+
+* 🎸 adopt mersennetwister ([2444283](https://github.com/jamashita/steckdose/commit/244428367d3fde125cf9be0aa1b6a2c21730a2a9))
+* 🎸 MersenneTwister.ts ([41048ee](https://github.com/jamashita/steckdose/commit/41048ee3c7df1ada714f82c36496b69b85504ad9))
+* 🎸 remove d3-random ([59c1588](https://github.com/jamashita/steckdose/commit/59c1588a22d1eb3bcef6894e761410a1e5992b89))
+* 🎸 update ([8cf3887](https://github.com/jamashita/steckdose/commit/8cf388705aa45b104e218807c7f2249318e58260))
+
 # [@jamashita/steckdose-random-v1.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v1.1.0...@jamashita/steckdose-random-v1.2.0) (2021-05-17)
 
 ### Features
