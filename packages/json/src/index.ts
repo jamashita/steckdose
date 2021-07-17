@@ -1,2 +1,2 @@
-export * from './Error/JSONAError';
-export * from './JSONA';
+export * from './Error/JSONAError.js';
+export * from './JSONA.js';
