@@ -9,20 +9,22 @@
   "license": "MIT",
   "author": "jamashita <jamashita@arachnid.xyz>",
   "sideEffects": false,
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "type": "module",
+  "exports": {
+    "./*": "./dist/*.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "build": "yarn clean && concurrently \"npm:build:*\"",
-    "build:cjs": "tsc -b tsconfig.cjs.json",
-    "build:esm": "tsc -b tsconfig.esm.json",
+    "build": "yarn clean && tsc -b tsconfig.build.json",
     "clean": "concurrently \"npm:clean:*\"",
     "clean:coverage": "rimraf coverage",
     "clean:dist": "rimraf dist",
+    "clean:others": "rimraf *.log && rimraf tsconfig.build.tsbuildinfo",
     "test": "jest test"
   },
   "engines": {
