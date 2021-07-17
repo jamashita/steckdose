@@ -1,4 +1,4 @@
-import { Digest } from '../Digest';
+import { Digest } from '../Digest.js';
 
 describe('Digest', () => {
   describe('generate', () => {
