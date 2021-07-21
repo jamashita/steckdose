@@ -1,9 +1,37 @@
-# [@jamashita/steckdose-json-v1.4.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.3.0...@jamashita/steckdose-json-v1.4.0) (2021-07-21)
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.4.1](https://github.com/jamashita/steckdose.git/packages/json/compare/@jamashita/steckdose-json@1.4.0...@jamashita/steckdose-json@1.4.1) (2021-07-21)
+
+**Note:** Version bump only for package @jamashita/steckdose-json
+
+
+
+
+
+# 1.4.0 (2021-07-21)
+
+
+### Bug Fixes
+
+* 🐛 redundant syntax applied ([879dbcc](https://github.com/jamashita/steckdose.git/packages/json/commit/879dbccdd19dfee4f14d2f5a97f73c65de9a6b01))
 
 
 ### Features
 
-* 🎸 update ([55203e2](https://github.com/jamashita/steckdose/commit/55203e259e059ec8bc0abcf6878926368b95e6de))
+* 🎸 json package done ([b442a8a](https://github.com/jamashita/steckdose.git/packages/json/commit/b442a8a7b0ac72b25cff85bc1e727e0df078afa1))
+* 🎸 json: update misc ([b14a56c](https://github.com/jamashita/steckdose.git/packages/json/commit/b14a56c5331ab3f3f3261c72f0a57ee269a21834))
+* 🎸 setImmediate -> setTimeout ([3850bb3](https://github.com/jamashita/steckdose.git/packages/json/commit/3850bb391b850915dc3d6d75fa73cadf04d96e4d))
+* 🎸 update ([55203e2](https://github.com/jamashita/steckdose.git/packages/json/commit/55203e259e059ec8bc0abcf6878926368b95e6de))
+* 🎸 update ([8cf3887](https://github.com/jamashita/steckdose.git/packages/json/commit/8cf388705aa45b104e218807c7f2249318e58260))
+* 🎸 update ([9f5e2c9](https://github.com/jamashita/steckdose.git/packages/json/commit/9f5e2c9ea14e2174f401e1fde3f84776b86e34dd))
+* 🎸 update ([50bbf40](https://github.com/jamashita/steckdose.git/packages/json/commit/50bbf40024486ab571a57159c7d9f28f762eb10d))
+
+
+
+
 
 # [@jamashita/steckdose-json-v1.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.2.0...@jamashita/steckdose-json-v1.3.0) (2021-07-06)
 
