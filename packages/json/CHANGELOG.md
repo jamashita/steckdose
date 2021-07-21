@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-json-v1.5.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.4.0...@jamashita/steckdose-json-v1.5.0) (2021-07-21)
+
+
+### Features
+
+* 🎸 update ([53d0cb0](https://github.com/jamashita/steckdose/commit/53d0cb0bc2ccc914f2247d6ac01440c6c03ed2bc))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
