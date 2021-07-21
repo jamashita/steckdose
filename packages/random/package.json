@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose-random",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -27,10 +27,10 @@
     "clean:others": "rimraf *.log && rimraf tsconfig.build.tsbuildinfo"
   },
   "dependencies": {
-    "@jamashita/anden-error": "1.11.0"
+    "@jamashita/anden-error": "1.11.1"
   },
   "devDependencies": {
-    "@jamashita/anden-helper": "1.7.0"
+    "@jamashita/anden-helper": "1.7.1"
   },
   "engines": {
     "node": ">= 12.0.0",
