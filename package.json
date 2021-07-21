@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "author": "jamashita <jamashita@arachnid.xyz>",
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -25,9 +26,11 @@
     "prepare": "is-ci || husky install"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "7.14.5",
+    "@babel/preset-env": "7.14.8",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@jamashita/anden-helper": "1.6.0",
+    "@jamashita/anden-helper": "1.7.0",
     "@jamashita/eslint-plugin": "1.46.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
@@ -38,6 +41,7 @@
     "@types/bcrypt": "5.0.0",
     "@types/jest": "26.0.24",
     "@types/sinon": "10.0.2",
+    "babel-jest": "27.0.6",
     "concurrently": "6.2.0",
     "eslint": "7.31.0",
     "git-cz": "4.7.6",
