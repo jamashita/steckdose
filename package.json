@@ -27,7 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@jamashita/anden-helper": "1.6.0",
+    "@jamashita/anden-helper": "1.7.0",
     "@jamashita/eslint-plugin": "1.46.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
