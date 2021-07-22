@@ -1,7 +1,25 @@
+# [@jamashita/steckdose-random-v1.5.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v1.4.0...@jamashita/steckdose-random-v1.5.0) (2021-07-21)
+
+
+### Features
+
+* 🎸 update ([53d0cb0](https://github.com/jamashita/steckdose/commit/53d0cb0bc2ccc914f2247d6ac01440c6c03ed2bc))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.0.0](https://github.com/jamashita/steckdose.git/packages/random/compare/@jamashita/steckdose-random@1.4.1...@jamashita/steckdose-random@2.0.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 update ([53d0cb0](https://github.com/jamashita/steckdose.git/packages/random/commit/53d0cb0bc2ccc914f2247d6ac01440c6c03ed2bc))
+
+
+
+
 
 ## [1.4.1](https://github.com/jamashita/steckdose.git/packages/random/compare/@jamashita/steckdose-random@1.4.0...@jamashita/steckdose-random@1.4.1) (2021-07-21)
 
