@@ -1,4 +1,4 @@
-import { wait } from '@jamashita/steckdose-wait';
+import { wait } from '../Wait.js';
 
 describe('Wait', () => {
   describe('wait', () => {
