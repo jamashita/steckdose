@@ -1,3 +1,15 @@
+# [@jamashita/steckdose-digest-v2.0.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v1.1.0...@jamashita/steckdose-digest-v2.0.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 ver up ([4883ada](https://github.com/jamashita/steckdose/commit/4883adaea910d319747a8440a43b124af31ae736))
+
+
+### BREAKING CHANGES
+
+* 🧨 ver up
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

@@ -1,3 +1,15 @@
+# [@jamashita/steckdose-wait-v2.0.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v1.0.1...@jamashita/steckdose-wait-v2.0.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 ver up ([4883ada](https://github.com/jamashita/steckdose/commit/4883adaea910d319747a8440a43b124af31ae736))
+
+
+### BREAKING CHANGES
+
+* 🧨 ver up
+
 # [@jamashita/steckdose-wait-v1.0.1](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v1.0.0...@jamashita/steckdose-wait-v1.0.1) (2021-07-22)
 
 
