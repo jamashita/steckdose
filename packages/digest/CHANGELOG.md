@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/jamashita/steckdose.git/packages/digest/compare/@jamashita/steckdose-digest@1.2.1...@jamashita/steckdose-digest@2.0.0) (2021-07-22)
+
+**Note:** Version bump only for package @jamashita/steckdose-digest
+
+
+
+
+
 ## [1.2.1](https://github.com/jamashita/steckdose.git/packages/digest/compare/@jamashita/steckdose-digest@1.2.0...@jamashita/steckdose-digest@1.2.1) (2021-07-21)
 
 **Note:** Version bump only for package @jamashita/steckdose-digest
