@@ -1,4 +1,4 @@
-import { MersenneTwister } from '../MersenneTwister.js';
+import { MersenneTwister } from '../MersenneTwister';
 
 describe('MersenneTwister', () => {
   describe('integer', () => {

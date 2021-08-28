@@ -1,5 +1,5 @@
-import { RandomError } from './Error/RandomError.js';
-import { MersenneTwister } from './MersenneTwister.js';
+import { RandomError } from './Error/RandomError';
+import { MersenneTwister } from './MersenneTwister';
 
 const today: Date = new Date();
 const seed: number = today.getDate();

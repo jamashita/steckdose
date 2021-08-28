@@ -1,4 +1,4 @@
-import { wait } from '../Wait.js';
+import { wait } from '../Wait';
 
 describe('Wait', () => {
   describe('wait', () => {
