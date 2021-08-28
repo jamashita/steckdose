@@ -1,5 +1,5 @@
 import { ObjectLiteral, Reject, Resolve } from '@jamashita/anden-type';
-import { JSONAError } from './Error/JSONAError.js';
+import { JSONAError } from './Error/JSONAError';
 
 export class JSONA {
   public static parse<T extends ObjectLiteral = ObjectLiteral>(text: string): Promise<T> {

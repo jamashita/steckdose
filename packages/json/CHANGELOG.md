@@ -1,3 +1,30 @@
+# [@jamashita/steckdose-json-v2.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v2.1.0...@jamashita/steckdose-json-v2.2.0) (2021-08-28)
+
+
+### Features
+
+* 🎸 removed .js due to change from eSM to duap package ([e81bd30](https://github.com/jamashita/steckdose/commit/e81bd3072f8c16fbccd49125347c98fd8b971250))
+* 🎸 update ([1348877](https://github.com/jamashita/steckdose/commit/13488773f0256796e322f9eab7d49d4c9ec9e503))
+
+# [@jamashita/steckdose-json-v2.1.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v2.0.0...@jamashita/steckdose-json-v2.1.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 update ([7f7a8f9](https://github.com/jamashita/steckdose/commit/7f7a8f9d6f6e5525db2269ff1db7fd27111ccae6))
+
+# [@jamashita/steckdose-json-v2.0.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.5.0...@jamashita/steckdose-json-v2.0.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 ver up ([4883ada](https://github.com/jamashita/steckdose/commit/4883adaea910d319747a8440a43b124af31ae736))
+
+
+### BREAKING CHANGES
+
+* 🧨 ver up
+
 # [@jamashita/steckdose-json-v1.5.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v1.4.0...@jamashita/steckdose-json-v1.5.0) (2021-07-21)
 
 
@@ -9,6 +36,17 @@
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.0.0](https://github.com/jamashita/steckdose.git/packages/json/compare/@jamashita/steckdose-json@1.4.2...@jamashita/steckdose-json@2.0.0) (2021-07-22)
+
+
+### Features
+
+* 🎸 update ([53d0cb0](https://github.com/jamashita/steckdose.git/packages/json/commit/53d0cb0bc2ccc914f2247d6ac01440c6c03ed2bc))
+
+
+
+
 
 ## [1.4.2](https://github.com/jamashita/steckdose.git/packages/json/compare/@jamashita/steckdose-json@1.4.1...@jamashita/steckdose-json@1.4.2) (2021-07-21)
 
