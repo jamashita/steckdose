@@ -1,1 +1,1 @@
-export * from './Wait.js';
+export * from './Wait';

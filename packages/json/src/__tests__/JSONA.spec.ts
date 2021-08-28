@@ -1,6 +1,6 @@
 import { ObjectLiteral } from '@jamashita/anden-type';
-import { JSONAError } from '../Error/JSONAError.js';
-import { JSONA } from '../JSONA.js';
+import { JSONAError } from '../Error/JSONAError';
+import { JSONA } from '../JSONA';
 
 describe('JSONA', () => {
   describe('parse', () => {

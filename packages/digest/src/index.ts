@@ -1,1 +1,1 @@
-export * from './Digest.js';
+export * from './Digest';

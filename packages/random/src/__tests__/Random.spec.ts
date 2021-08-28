@@ -1,6 +1,6 @@
 import { sequence } from '@jamashita/anden-helper';
-import { RandomError } from '../Error/RandomError.js';
-import { Random } from '../Random.js';
+import { RandomError } from '../Error/RandomError';
+import { Random } from '../Random';
 
 describe('Random', () => {
   describe('integer', () => {
