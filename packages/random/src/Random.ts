@@ -1,9 +1,7 @@
+import MersenneTwister from 'mersenne-twister';
 import { RandomError } from './Error/RandomError';
-import { MersenneTwister } from './MersenneTwister';
 
-const today: Date = new Date();
-const seed: number = today.getDate();
-const mersenne: MersenneTwister = new MersenneTwister(seed);
+const mersenne: MersenneTwister = new MersenneTwister();
 
 export class Random {
   public static integer(min: number, max: number): number {
@@ -14,7 +12,7 @@ export class Random {
       return min;
     }
 
-    return Math.floor(mersenne.decimal() * (max + 1 - min)) + min;
+    return Math.floor(mersenne.random() * (max + 1 - min)) + min;
   }
 
   private constructor() {
