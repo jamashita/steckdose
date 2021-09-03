@@ -1,3 +1,11 @@
+# [@jamashita/steckdose-wait-v2.1.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v2.0.0...@jamashita/steckdose-wait-v2.1.0) (2021-08-28)
+
+
+### Features
+
+* 🎸 removed .js due to change from eSM to duap package ([e81bd30](https://github.com/jamashita/steckdose/commit/e81bd3072f8c16fbccd49125347c98fd8b971250))
+* 🎸 update ([1348877](https://github.com/jamashita/steckdose/commit/13488773f0256796e322f9eab7d49d4c9ec9e503))
+
 # [@jamashita/steckdose-wait-v2.0.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v1.0.1...@jamashita/steckdose-wait-v2.0.0) (2021-07-22)
 
 
