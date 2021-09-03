@@ -26,7 +26,8 @@
     "clean:others": "rimraf *.log && rimraf tsconfig.build.tsbuildinfo"
   },
   "dependencies": {
-    "@jamashita/anden-error": "2.1.1"
+    "@jamashita/anden-error": "2.1.1",
+    "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
     "@jamashita/anden-helper": "2.0.2"
