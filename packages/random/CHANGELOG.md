@@ -1,3 +1,15 @@
+# [@jamashita/steckdose-random-v2.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.2.0...@jamashita/steckdose-random-v2.3.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* 🐛 return to use mersenne-twister package ([7ebd7ae](https://github.com/jamashita/steckdose/commit/7ebd7ae88a86c2998978b422db60e958fc006c1b))
+
+
+### Features
+
+* 🎸 update ([b3d8ae0](https://github.com/jamashita/steckdose/commit/b3d8ae0a8cd40ba7cb55a7036a0c6b66272045b5))
+
 # [@jamashita/steckdose-random-v2.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.1.0...@jamashita/steckdose-random-v2.2.0) (2021-08-28)
 
 
