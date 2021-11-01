@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-json-v2.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v2.2.0...@jamashita/steckdose-json-v2.3.0) (2021-11-01)
+
+
+### Features
+
+* 🎸 packages updated ([e591c67](https://github.com/jamashita/steckdose/commit/e591c675bd1841334c2c80dc4940876411614aa0))
+
 # [@jamashita/steckdose-json-v2.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-json-v2.1.0...@jamashita/steckdose-json-v2.2.0) (2021-08-28)
 
 
