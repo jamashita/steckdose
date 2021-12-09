@@ -1,8 +1,6 @@
 import { RuntimeError } from '@jamashita/anden-error';
 
-export class JSONAError extends RuntimeError<'JSONAError'> {
-  public readonly noun: 'JSONAError' = 'JSONAError';
-
+export class JSONAError extends RuntimeError {
   public constructor(cause?: Error) {
     super('JSONAError', cause);
   }
