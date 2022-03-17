@@ -1,5 +1,5 @@
 import MersenneTwister from 'mersenne-twister';
-import { RandomError } from './Error/RandomError';
+import { RandomError } from './RandomError';
 
 const mersenne: MersenneTwister = new MersenneTwister();
 
