@@ -22,14 +22,13 @@
     "build:esm": "tsc -b tsconfig.esm.json",
     "clean": "concurrently \"npm:clean:*\"",
     "clean:coverage": "rimraf coverage",
-    "clean:dist": "rimraf dist",
-    "clean:others": "rimraf *.log && rimraf tsconfig.build.tsbuildinfo"
+    "clean:dist": "rimraf dist"
   },
   "dependencies": {
     "bcrypt": "5.0.1"
   },
   "engines": {
-    "node": ">= 12.0.0",
+    "node": ">=14.0.0",
     "npm": "npm is not supported"
   },
   "engineStrict": true,
