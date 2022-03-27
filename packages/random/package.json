@@ -22,18 +22,17 @@
     "build:esm": "tsc -b tsconfig.esm.json",
     "clean": "concurrently \"npm:clean:*\"",
     "clean:coverage": "rimraf coverage",
-    "clean:dist": "rimraf dist",
-    "clean:others": "rimraf *.log && rimraf tsconfig.build.tsbuildinfo"
+    "clean:dist": "rimraf dist"
   },
   "dependencies": {
-    "@jamashita/anden-error": "2.3.0",
+    "@jamashita/anden-error": "2.4.0",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
-    "@jamashita/anden-helper": "2.0.2"
+    "@jamashita/anden-helper": "2.1.0"
   },
   "engines": {
-    "node": ">= 12.0.0",
+    "node": ">=14.0.0",
     "npm": "npm is not supported"
   },
   "engineStrict": true,

@@ -5,10 +5,12 @@ describe('Digest', () => {
     it('generates different hashes', async () => {
       expect.assertions(1);
 
+      const digest: Digest = new Digest();
+
       const password: string = 'The quick brown fox jumps over the lazy dog';
       const [hash1, hash2]: [string, string] = await Promise.all([
-        Digest.generate(password),
-        Digest.generate(password)
+        digest.generate(password),
+        digest.generate(password)
       ]);
 
       expect(hash1).not.toBe(hash2);
@@ -19,13 +21,15 @@ describe('Digest', () => {
     it('returns true even if the hashes are different', async () => {
       expect.assertions(2);
 
+      const digest: Digest = new Digest();
+
       const password: string = 'The quick brown fox jumps over the lazy dog';
-      const hash1: string = await Digest.generate(password);
-      const hash2: string = await Digest.generate(password);
+      const hash1: string = await digest.generate(password);
+      const hash2: string = await digest.generate(password);
 
       const [compared1, compared2]: [boolean, boolean] = await Promise.all([
-        Digest.compare(password, hash1),
-        Digest.compare(password, hash2)
+        digest.compare(password, hash1),
+        digest.compare(password, hash2)
       ]);
 
       expect(compared1).toBe(true);

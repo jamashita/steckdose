@@ -1,5 +1,5 @@
 import { sequence } from '@jamashita/anden-helper';
-import { RandomError } from '../Error/RandomError';
+import { RandomError } from '../RandomError';
 import { Random } from '../Random';
 
 describe('Random', () => {
