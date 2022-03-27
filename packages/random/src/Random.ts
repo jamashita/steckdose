@@ -4,6 +4,12 @@ import { RandomError } from './RandomError';
 const mersenne: MersenneTwister = new MersenneTwister();
 
 export class Random {
+
+  /**
+   * returns min <= x <= max
+   * @param min
+   * @param max
+   */
   public static integer(min: number, max: number): number {
     if (min > max) {
       throw new RandomError(`MIN IS GREATER THAN MAX: GIVEN: min = ${min}, MAX = ${max}`);
