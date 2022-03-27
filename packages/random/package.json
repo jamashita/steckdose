@@ -25,11 +25,11 @@
     "clean:dist": "rimraf dist"
   },
   "dependencies": {
-    "@jamashita/anden-error": "2.3.0",
+    "@jamashita/anden-error": "2.4.0",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
-    "@jamashita/anden-helper": "2.0.2"
+    "@jamashita/anden-helper": "2.1.0"
   },
   "engines": {
     "node": ">=14.0.0",
