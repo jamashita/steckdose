@@ -38,7 +38,7 @@
     "@types/bcrypt": "5.0.0",
     "@types/jest": "27.4.1",
     "@types/mersenne-twister": "1.1.2",
-    "concurrently": "7.0.0",
+    "concurrently": "7.1.0",
     "eslint": "8.12.0",
     "git-cz": "4.8.0",
     "husky": "7.0.4",
