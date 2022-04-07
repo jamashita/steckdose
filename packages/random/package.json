@@ -25,7 +25,8 @@
     "clean:dist": "rimraf dist"
   },
   "dependencies": {
-    "@jamashita/anden-error": "2.7.0",
+    "@jamashita/anden-error": "2.8.0",
+    "@jamashita/anden-type": "2.7.0",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {

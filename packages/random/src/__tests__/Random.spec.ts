@@ -1,28 +1,38 @@
 import { sequence } from '@jamashita/anden-helper';
-import { RandomError } from '../RandomError';
 import { Random } from '../Random';
+import { RandomError } from '../RandomError';
 
 describe('Random', () => {
   describe('integer', () => {
-    it('may throw error when min > max', () => {
-      expect.assertions(1);
+    it('throws RandomError when min is not integer', () => {
+      expect(() => {
+        Random.integer(0.1, 1);
+      }).toThrow(RandomError);
+    });
 
+    it('throws RandomError when max is not integer', () => {
+      expect(() => {
+        Random.integer(0, 1.1);
+      }).toThrow(RandomError);
+    });
+
+    it('throws RandomError when min > max', () => {
       expect(() => {
         Random.integer(1, 0);
       }).toThrow(RandomError);
     });
 
-    it('returns the same value when min == max', () => {
-      expect.assertions(100);
+    it('returns specified value when min = max', () => {
+      expect(Random.integer(98, 98)).toBe(98);
+    });
 
+    it('returns the same value when min == max', () => {
       for (let i: number = 0; i < 100; i++) {
         expect(Random.integer(10_000, 10_000)).toBe(10_000);
       }
     });
 
     it('returns [min, max] range of value', async () => {
-      expect.assertions(20_000);
-
       const min: number = 1;
       const max: number = 100;
 
