@@ -3,8 +3,6 @@ import { Digest } from '../Digest';
 describe('Digest', () => {
   describe('compare', () => {
     it('returns true even if the hashes are different', async () => {
-      expect.assertions(2);
-
       const digest: Digest = new Digest();
 
       const password: string = 'The quick brown fox jumps over the lazy dog';
@@ -23,8 +21,6 @@ describe('Digest', () => {
 
   describe('generate', () => {
     it('generates different hashes', async () => {
-      expect.assertions(1);
-
       const digest: Digest = new Digest();
 
       const password: string = 'The quick brown fox jumps over the lazy dog';

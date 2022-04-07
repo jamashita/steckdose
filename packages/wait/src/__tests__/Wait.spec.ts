@@ -3,8 +3,6 @@ import { wait } from '../Wait';
 describe('Wait', () => {
   describe('wait', () => {
     it('must pass a certain milli seconds', async () => {
-      expect.assertions(1);
-
       const ms: number = 1000;
       const threshold: number = 50;
 

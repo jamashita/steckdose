@@ -1,3 +1,15 @@
+# [@jamashita/steckdose-random-v2.8.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.7.0...@jamashita/steckdose-random-v2.8.0) (2022-04-07)
+
+
+### Bug Fixes
+
+* 🐛 throws RandomError when decimal value given ([b06d91f](https://github.com/jamashita/steckdose/commit/b06d91f47177da11daaa00621a5c0fd3eeca4869))
+
+
+### Features
+
+* 🎸 package updated ([0fe91b7](https://github.com/jamashita/steckdose/commit/0fe91b7ba42a870832182a760d2260dd633424d5))
+
 # [@jamashita/steckdose-random-v2.7.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.6.0...@jamashita/steckdose-random-v2.7.0) (2022-04-04)
 
 
