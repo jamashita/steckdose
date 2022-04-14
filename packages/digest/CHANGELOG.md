@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-digest-v2.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.2.0...@jamashita/steckdose-digest-v2.3.0) (2022-04-14)
+
+
+### Features
+
+* 🎸 made methods static ([2932f91](https://github.com/jamashita/steckdose/commit/2932f91399cd5a8d258a31645db71002bd5167dd))
+
 # [@jamashita/steckdose-digest-v2.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.1.0...@jamashita/steckdose-digest-v2.2.0) (2022-03-27)
 
 
