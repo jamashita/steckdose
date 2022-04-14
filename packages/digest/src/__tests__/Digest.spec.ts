@@ -3,15 +3,13 @@ import { Digest } from '../Digest';
 describe('Digest', () => {
   describe('compare', () => {
     it('returns true even if the hashes are different', async () => {
-      const digest: Digest = new Digest();
-
       const password: string = 'The quick brown fox jumps over the lazy dog';
-      const hash1: string = await digest.generate(password);
-      const hash2: string = await digest.generate(password);
+      const hash1: string = await Digest.generate(password);
+      const hash2: string = await Digest.generate(password);
 
       const [compared1, compared2]: [boolean, boolean] = await Promise.all([
-        digest.compare(password, hash1),
-        digest.compare(password, hash2)
+        Digest.compare(password, hash1),
+        Digest.compare(password, hash2)
       ]);
 
       expect(compared1).toBe(true);
@@ -21,12 +19,10 @@ describe('Digest', () => {
 
   describe('generate', () => {
     it('generates different hashes', async () => {
-      const digest: Digest = new Digest();
-
       const password: string = 'The quick brown fox jumps over the lazy dog';
       const [hash1, hash2]: [string, string] = await Promise.all([
-        digest.generate(password),
-        digest.generate(password)
+        Digest.generate(password),
+        Digest.generate(password)
       ]);
 
       expect(hash1).not.toBe(hash2);

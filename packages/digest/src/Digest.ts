@@ -1,19 +1,17 @@
 import bcrypt from 'bcrypt';
 
 export class Digest {
-  private readonly rounds: number;
-
-  public constructor(rounds: number = 15) {
-    this.rounds = rounds;
-  }
-
-  public compare(str: string, hash: string): Promise<boolean> {
+  public static compare(str: string, hash: string): Promise<boolean> {
     return bcrypt.compare(str, hash);
   }
 
-  public async generate(str: string): Promise<string> {
-    const salt: string = await bcrypt.genSalt(this.rounds);
+  public static async generate(str: string, rounds: number = 15): Promise<string> {
+    const salt: string = await bcrypt.genSalt(rounds);
 
     return bcrypt.hash(str, salt);
+  }
+
+  private constructor() {
+    // NOOP
   }
 }
