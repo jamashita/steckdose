@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose-random",
-  "version": "2.9.0",
+  "version": "2.10.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@jamashita/anden-error": "2.15.0",
-    "@jamashita/anden-type": "2.8.0",
+    "@jamashita/anden-type": "2.9.0",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
