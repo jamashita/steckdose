@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-random-v2.12.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.11.0...@jamashita/steckdose-random-v2.12.0) (2022-06-05)
+
+
+### Features
+
+* 🎸 packagegs updated ([afa7cd8](https://github.com/jamashita/steckdose/commit/afa7cd8c0ec880ee62756383d3414ff3c38562db))
+
 # [@jamashita/steckdose-random-v2.11.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.10.0...@jamashita/steckdose-random-v2.11.0) (2022-05-04)
 
 
