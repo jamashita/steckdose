@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-wait-v2.2.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v2.1.0...@jamashita/steckdose-wait-v2.2.0) (2022-06-24)
+
+
+### Features
+
+* 🎸 remove coverage generating script ([9a2a014](https://github.com/jamashita/steckdose/commit/9a2a01442292078fcb5c778c7b4e1294eb588cfa))
+
 # [@jamashita/steckdose-wait-v2.1.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-wait-v2.0.0...@jamashita/steckdose-wait-v2.1.0) (2021-08-28)
 
 
