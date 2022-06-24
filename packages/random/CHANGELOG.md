@@ -1,3 +1,11 @@
+# [@jamashita/steckdose-random-v2.13.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.12.0...@jamashita/steckdose-random-v2.13.0) (2022-06-24)
+
+
+### Features
+
+* 🎸 remove coverage generating script ([9a2a014](https://github.com/jamashita/steckdose/commit/9a2a01442292078fcb5c778c7b4e1294eb588cfa))
+* 🎸 update ([94c09e8](https://github.com/jamashita/steckdose/commit/94c09e8e0b5fe16a689e2366737eaea8a6726243))
+
 # [@jamashita/steckdose-random-v2.12.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-random-v2.11.0...@jamashita/steckdose-random-v2.12.0) (2022-06-05)
 
 
