@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-digest-v2.4.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.3.0...@jamashita/steckdose-digest-v2.4.0) (2022-06-24)
+
+
+### Features
+
+* 🎸 remove coverage generating script ([9a2a014](https://github.com/jamashita/steckdose/commit/9a2a01442292078fcb5c778c7b4e1294eb588cfa))
+
 # [@jamashita/steckdose-digest-v2.3.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.2.0...@jamashita/steckdose-digest-v2.3.0) (2022-04-14)
 
 
