@@ -4,7 +4,7 @@ import { JSONAError } from './JSONAError';
 export class JSONA {
   public static parse<T extends ObjectLiteral = ObjectLiteral>(text: string): Promise<T> {
     return new Promise((resolve: Resolve<T>, reject: Reject) => {
-      setTimeout(() => {
+      queueMicrotask(() => {
         try {
           resolve(JSON.parse(text) as T);
         }
@@ -17,13 +17,13 @@ export class JSONA {
 
           reject(err);
         }
-      }, 0);
+      });
     });
   }
 
   public static stringify(value: ObjectLiteral): Promise<string> {
     return new Promise((resolve: Resolve<string>, reject: Reject) => {
-      setTimeout(() => {
+      queueMicrotask(() => {
         try {
           resolve(JSON.stringify(value));
         }
@@ -36,7 +36,7 @@ export class JSONA {
 
           reject(err);
         }
-      }, 0);
+      });
     });
   }
 
