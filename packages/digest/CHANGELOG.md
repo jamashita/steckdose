@@ -1,3 +1,10 @@
+# [@jamashita/steckdose-digest-v2.5.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.4.0...@jamashita/steckdose-digest-v2.5.0) (2022-10-24)
+
+
+### Features
+
+* 🎸 packages updated ([f9ad9ba](https://github.com/jamashita/steckdose/commit/f9ad9ba5b7f719c2836d001d1cb65323fea7c13d))
+
 # [@jamashita/steckdose-digest-v2.4.0](https://github.com/jamashita/steckdose/compare/@jamashita/steckdose-digest-v2.3.0...@jamashita/steckdose-digest-v2.4.0) (2022-06-24)
 
 
