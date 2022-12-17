@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jamashita/steckdose/compare/v1.0.0...v1.1.0) (2022-12-17)
+
+
+### Features
+
+* 🎸 downgrade ([8caeaa4](https://github.com/jamashita/steckdose/commit/8caeaa45338ac0ad24dcfa0d9fca32e842be5a41))
+
 # 1.0.0 (2022-12-17)
 
 

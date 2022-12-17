@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -58,7 +58,7 @@
     "update:upgrade": "ncu --packageManager yarn --deep --upgrade"
   },
   "dependencies": {
-    "@jamashita/anden": "1.1.0",
+    "@jamashita/anden": "1.0.0",
     "bcrypt": "5.1.0",
     "mersenne-twister": "1.1.0"
   },
