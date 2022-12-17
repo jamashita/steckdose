@@ -92,6 +92,7 @@
   },
   "engineStrict": true,
   "publishConfig": {
-    "access": "public"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
