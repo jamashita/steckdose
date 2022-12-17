@@ -10,6 +10,38 @@
   "author": "jamashita <jamashita@arachnid.xyz>",
   "sideEffects": false,
   "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./digest": {
+      "import": {
+        "types": "./dist/digest/index.d.ts",
+        "default": "./dist/digest/index.js"
+      }
+    },
+    "./json": {
+      "import": {
+        "types": "./dist/json/index.d.ts",
+        "default": "./dist/json/index.js"
+      }
+    },
+    "./random": {
+      "import": {
+        "types": "./dist/random/index.d.ts",
+        "default": "./dist/random/index.js"
+      }
+    },
+    "./wait": {
+      "import": {
+        "types": "./dist/wait/index.d.ts",
+        "default": "./dist/wait/index.js"
+      }
+    }
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
