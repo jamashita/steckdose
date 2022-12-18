@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/jamashita/steckdose/compare/v1.1.0...v1.1.1) (2022-12-17)
+
+
+### Bug Fixes
+
+* 🐛 private: [secure] ([c20158e](https://github.com/jamashita/steckdose/commit/c20158e8d7884237b4ce5adb58818dabca749f99))
+
 # [1.1.0](https://github.com/jamashita/steckdose/compare/v1.0.0...v1.1.0) (2022-12-17)
 
 
