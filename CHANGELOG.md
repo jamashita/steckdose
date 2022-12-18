@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/jamashita/steckdose/compare/v1.1.1...v1.1.2) (2022-12-18)
+
+
+### Bug Fixes
+
+* 🐛 file ([18b1b1b](https://github.com/jamashita/steckdose/commit/18b1b1b1575377e42fdb669b0a5a25daa7022a92))
+
 ## [1.1.1](https://github.com/jamashita/steckdose/compare/v1.1.0...v1.1.1) (2022-12-17)
 
 
