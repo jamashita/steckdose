@@ -1,4 +1,4 @@
-import { RuntimeError } from '@jamashita/anden/error';
+import { RuntimeError } from '@jamashita/anden';
 
 export class JSONAError extends RuntimeError {
   public constructor(cause?: Error) {
