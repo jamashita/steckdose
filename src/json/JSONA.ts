@@ -1,4 +1,4 @@
-import { ObjectLiteral, Reject, Resolve } from '@jamashita/anden/type';
+import { ObjectLiteral, Reject, Resolve } from '@jamashita/anden';
 import { JSONAError } from './JSONAError.js';
 
 export class JSONA {
