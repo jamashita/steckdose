@@ -1,4 +1,4 @@
-import { Kind } from '@jamashita/anden/type';
+import { Kind } from '@jamashita/anden';
 import MersenneTwister from 'mersenne-twister';
 import { RandomError } from './RandomError.js';
 
