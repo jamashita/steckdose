@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/jamashita/steckdose/compare/v1.4.0...v1.4.1) (2022-12-28)
+
+
+### Bug Fixes
+
+* 🐛 export url ([84d5efb](https://github.com/jamashita/steckdose/commit/84d5efba03606eafc6c7938f0f562e7050a0c787))
+
 # [1.4.0](https://github.com/jamashita/steckdose/compare/v1.3.0...v1.4.0) (2022-12-28)
 
 
