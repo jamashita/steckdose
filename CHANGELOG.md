@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/jamashita/steckdose/compare/v1.4.1...v1.5.0) (2023-01-03)
+
+
+### Features
+
+* 🎸 nneed  to instantiate ([e2c8744](https://github.com/jamashita/steckdose/commit/e2c874466031b70219fabb230c0f0423cdfabcde))
+* 🎸 packages updated ([1ba9f1b](https://github.com/jamashita/steckdose/commit/1ba9f1b7aa26a8dbbd9939b4296b494571022341))
+
 ## [1.4.1](https://github.com/jamashita/steckdose/compare/v1.4.0...v1.4.1) (2022-12-28)
 
 
