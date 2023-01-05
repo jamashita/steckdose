@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -68,13 +68,13 @@
     "update:upgrade": "ncu --packageManager yarn --deep --upgrade"
   },
   "dependencies": {
-    "@jamashita/anden": "1.6.0",
+    "@jamashita/anden": "1.7.5",
     "bcrypt": "5.1.0",
     "mersenne-twister": "1.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.3.0",
-    "@commitlint/config-conventional": "17.3.0",
+    "@commitlint/cli": "17.4.0",
+    "@commitlint/config-conventional": "17.4.0",
     "@jamashita/eslint-plugin": "1.82.1",
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/commit-analyzer": "9.0.2",
@@ -86,7 +86,7 @@
     "@types/mersenne-twister": "1.1.2",
     "@types/node": "18.11.18",
     "git-cz": "4.9.0",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "is-ci": "3.0.1",
     "lint-staged": "13.1.0",
     "npm-check-updates": "16.6.2",

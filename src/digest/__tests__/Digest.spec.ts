@@ -5,9 +5,10 @@ describe('Digest', () => {
     it('returns true even if the hashes are different', async () => {
       const digest: Digest = new Digest(1);
       const password: string = 'The quick brown fox jumps over the lazy dog';
-      const hash1: string = await digest.generate(password);
-      const hash2: string = await digest.generate(password);
-
+      const [hash1, hash2]: [string, string] = await Promise.all([
+        digest.generate(password),
+        digest.generate(password)
+      ]);
       const [compared1, compared2]: [boolean, boolean] = await Promise.all([
         digest.compare(password, hash1),
         digest.compare(password, hash2)
