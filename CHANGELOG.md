@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/jamashita/steckdose/compare/v1.5.0...v1.6.0) (2023-01-03)
+
+
+### Features
+
+* 🎸 packages updated ([bbfa6c4](https://github.com/jamashita/steckdose/commit/bbfa6c44ec3b79a036589086a1178689aa7920c2))
+
 # [1.5.0](https://github.com/jamashita/steckdose/compare/v1.4.1...v1.5.0) (2023-01-03)
 
 

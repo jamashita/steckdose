@@ -1,8 +1,8 @@
 export class Tokenizer implements Iterable<string> {
   private readonly tokens: Array<string>;
 
-  public constructor(str: string, delimter: string) {
-    const tokens: Array<string> = str.split(delimter);
+  public constructor(str: string, delimiter: string) {
+    const tokens: Array<string> = str.split(delimiter);
 
     this.tokens = tokens.filter((t: string) => {
       return t !== '';
