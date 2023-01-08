@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/jamashita/steckdose/compare/v1.7.0...v1.8.0) (2023-01-08)
+
+
+### Features
+
+* 🎸 made it a class and add approximatelyFor ([055ddb0](https://github.com/jamashita/steckdose/commit/055ddb0ba5d716d2e2b8527afcb204f4c8ec791d))
+* 🎸 packages updated ([30bc05a](https://github.com/jamashita/steckdose/commit/30bc05a3d9d698e7669c5091c633616f6256645c))
+
 # [1.7.0](https://github.com/jamashita/steckdose/compare/v1.6.0...v1.7.0) (2023-01-05)
 
 

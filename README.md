@@ -70,9 +70,15 @@ Return the number of tokens.
 
 Return tokens as an Array.
 
-### `wait(ms: number): Promise<void>`
+## Wait
+
+### `Wait.for(ms: number): Promise<void>`
 
 Wait given `ms` milliseconds.
+
+### `Wait.approximatelyFor(minMS: number, maxMS: number): Promise<void>`
+
+Wait between `minMS` and `maxMS` milliseconds, inclusive.
 
 ## License
 
