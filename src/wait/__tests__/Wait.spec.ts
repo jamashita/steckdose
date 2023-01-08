@@ -1,4 +1,4 @@
-import { wait } from '../Wait.js';
+import { Wait } from '../Wait.js';
 
 describe('Wait', () => {
   describe('wait', () => {
@@ -8,7 +8,7 @@ describe('Wait', () => {
 
       const start: number = Date.now();
 
-      await wait(ms);
+      await Wait.for(ms);
 
       const end: number = Date.now();
 
