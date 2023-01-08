@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/jamashita/steckdose/compare/v1.6.0...v1.7.0) (2023-01-05)
+
+
+### Bug Fixes
+
+* 🐛 typo ([c97c8e1](https://github.com/jamashita/steckdose/commit/c97c8e1eb88e37bc00f1884f103b44fd3d86c228))
+
+
+### Features
+
+* 🎸 packages updated ([a2631d8](https://github.com/jamashita/steckdose/commit/a2631d899015006a13599f3ac5ffe71e02762d9c))
+
 # [1.6.0](https://github.com/jamashita/steckdose/compare/v1.5.0...v1.6.0) (2023-01-03)
 
 

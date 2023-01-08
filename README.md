@@ -30,7 +30,7 @@ git cz
 
 ### `new Digest(rounds: number)`
 
-Returns `Digest` instance. Round is the cost o processing data.
+Return `Digest` instance. `rounds` is the cost o processing data.
 
 ### `digest.compare(str: string, hash: string): Promise<boolean>`
 
@@ -44,7 +44,7 @@ Generate a hash of the given `str`.
 
 ### `JSONA.parse<T extends ObjectLiteral>(text: string): Promise<T>`
 
-Asynchronously returns JSON.
+Asynchronously return JSON.
 
 ### `JSONA.stringify(value: ObjectLiteral): Promise<string>`
 
@@ -60,19 +60,25 @@ Generate a random number between min and max, inclusive.
 
 ### `new Tokenizer(str: string, delimiter: string)`
 
-Returns `Tokenizer` instance.
+Return `Tokenizer` instance.
 
 ### `tokenizer.count(): number`
 
-Returns the number of tokens.
+Return the number of tokens.
 
 ### `tokenizer.getTokens()`
 
-Returns tokens as an Array.
+Return tokens as an Array.
 
-### `wait(ms: number): Promise<void>`
+## Wait
+
+### `Wait.for(ms: number): Promise<void>`
 
 Wait given `ms` milliseconds.
+
+### `Wait.approximatelyFor(minMS: number, maxMS: number): Promise<void>`
+
+Wait between `minMS` and `maxMS` milliseconds, inclusive.
 
 ## License
 
