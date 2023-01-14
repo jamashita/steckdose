@@ -1,7 +1,7 @@
 import { Wait } from '../Wait.js';
 
 describe('Wait', () => {
-  describe('wait', () => {
+  describe('for', () => {
     it('must pass a certain milli seconds', async () => {
       const ms: number = 1000;
       const threshold: number = 50;
