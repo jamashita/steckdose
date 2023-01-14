@@ -28,57 +28,72 @@ git cz
 
 ## Digest
 
+A class for generating and comparing cryptographic hashes, using bcrypt.
+
 ### `new Digest(rounds: number)`
 
-Return `Digest` instance. `rounds` is the cost o processing data.
+Returns a new `Digest` instance, with the specified number of `rounds` for the bcrypt algorithm. The higher the number
+of `rounds`, the more secure the resulting hash will be, but it will also take longer to generate.
 
 ### `digest.compare(str: string, hash: string): Promise<boolean>`
 
-Compare `str` to `hash`. `hash` is a generated string. It will return `true` if `str` is identical to `hash`.
+Compares the given `str` with the provided `hash`, and returns a promise that resolves to `true` if they match,
+and `false` otherwise.
 
 ### `digest.generate(str: string): Promise<string>`
 
-Generate a hash of the given `str`.
+Generates a cryptographic hash of the provided `str`, using the number of rounds specified in the Digest constructor.
+Returns a promise that resolves to the resulting hash.
 
 ## JSONA
 
+A class for asynchronously parsing JSON from a string and stringifying JSON to a string.
+
 ### `JSONA.parse<T extends ObjectLiteral>(text: string): Promise<T>`
 
-Asynchronously return JSON.
+Asynchronously returns a JavaScript object from the provided JSON string.
 
 ### `JSONA.stringify(value: ObjectLiteral): Promise<string>`
 
-Asynchronously return a string representation of the given JSON.
+Asynchronously returns a JSON string representation of the provided JavaScript object.
 
 ## Random
 
+A class for generating random integers.
+
 ### `Random.integer(min: number, max: number): number`
 
-Generate a random number between min and max, inclusive.
+Generates a random integer between min and max, inclusive.
 
 ## Tokenizer
 
+A class for tokenizing a string by a certain delimiter.
+
 ### `new Tokenizer(str: string, delimiter: string)`
 
-Return `Tokenizer` instance.
+Returns a Tokenizer instance.
 
 ### `tokenizer.count(): number`
 
-Return the number of tokens.
+Returns the number of tokens.
 
-### `tokenizer.getTokens()`
+### `tokenizer.getTokens(): string[]`
 
-Return tokens as an Array.
+Returns the tokens as an array.
+
+It's recommended to use built-in string method split() to tokenize a string.
 
 ## Wait
 
+A class for delaying the process for a certain amount of time in milliseconds.
+
 ### `Wait.for(ms: number): Promise<void>`
 
-Wait given `ms` milliseconds.
+Waits for the given ms milliseconds before resolving the promise.
 
 ### `Wait.approximatelyFor(minMS: number, maxMS: number): Promise<void>`
 
-Wait between `minMS` and `maxMS` milliseconds, inclusive.
+Waits for a random amount of time between minMS and maxMS milliseconds, inclusive, before resolving the promise.
 
 ## License
 
