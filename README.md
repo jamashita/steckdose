@@ -81,8 +81,6 @@ Returns the number of tokens.
 
 Returns the tokens as an array.
 
-It's recommended to use built-in string method split() to tokenize a string.
-
 ## Wait
 
 A class for delaying the process for a certain amount of time in milliseconds.
