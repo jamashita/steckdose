@@ -17,6 +17,12 @@
         "default": "./dist/index.js"
       }
     },
+    "./config": {
+      "import": {
+        "types": "./dist/config/index.d.ts",
+        "default": "./dist/config/index.js"
+      }
+    },
     "./digest": {
       "import": {
         "types": "./dist/digest/index.d.ts",
