@@ -158,4 +158,33 @@ describe('Config', () => {
       }).toThrow(ConfigError);
     });
   });
+
+  describe('has', () => {
+    it('returns true when config file has the given property', () => {
+      const config: Config = new Config('config1', 'test');
+
+      expect(config.has('a')).toBe(true);
+      expect(config.has('a.b')).toBe(true);
+      expect(config.has('a.b.c')).toBe(true);
+      expect(config.has('g')).toBe(true);
+      expect(config.has('g.h')).toBe(true);
+      expect(config.has('g.h.i')).toBe(true);
+      expect(config.has('g.h.j')).toBe(true);
+      expect(config.has('g.h.k')).toBe(true);
+      expect(config.has('l')).toBe(true);
+      expect(config.has('m')).toBe(true);
+    });
+
+    it('returns false when config file does not have the given property', () => {
+      const config: Config = new Config('config1', 'test');
+
+      expect(config.has('a.b.c.d')).toBe(false);
+      expect(config.has('a.b.c.d.e')).toBe(false);
+      expect(config.has('a.b.c.d.e.f')).toBe(false);
+      expect(config.has('g.z')).toBe(false);
+      expect(config.has('l.m')).toBe(false);
+      expect(config.has('l.m.n')).toBe(false);
+      expect(config.has('n')).toBe(false);
+    });
+  });
 });
