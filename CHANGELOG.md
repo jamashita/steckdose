@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/jamashita/steckdose/compare/v1.10.0...v1.10.1) (2023-02-25)
+
+
+### Bug Fixes
+
+* 🐛 config exports ([fb9a45a](https://github.com/jamashita/steckdose/commit/fb9a45a40e04e5f20ce3a231e5e596658199212f))
+
 # [1.10.0](https://github.com/jamashita/steckdose/compare/v1.9.0...v1.10.0) (2023-02-25)
 
 
