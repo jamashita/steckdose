@@ -110,3 +110,5 @@ export class Config {
     return this.traverseRecursive(rest, v);
   }
 }
+
+export const config: Config = new Config(process.env['CONFIG_DIR'] ?? 'config', process.env['NODE_ENV'] ?? 'development');
