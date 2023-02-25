@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/jamashita/steckdose/compare/v1.9.0...v1.10.0) (2023-02-25)
+
+
+### Features
+
+* 🎸 config package ([59d5613](https://github.com/jamashita/steckdose/commit/59d561367c2de30be73db5764fb2447f2c24be20))
+* 🎸 config.has ([d0a35c7](https://github.com/jamashita/steckdose/commit/d0a35c7fba1a3862aadb02245eb71c80cfcb26d7))
+* 🎸 packages udpated ([e8004ea](https://github.com/jamashita/steckdose/commit/e8004ea4487e0f92e8540120dfa8332916e9e1ac))
+* 🎸 packagese updated ([cbad77c](https://github.com/jamashita/steckdose/commit/cbad77c8d52eb4096c543926b25ccdae58983562))
+* 🎸 set override ([aceaf5f](https://github.com/jamashita/steckdose/commit/aceaf5f04a24a73c397a2f5ca03e59c51af3f2e7))
+* 🎸 yarn install ([f98a7ed](https://github.com/jamashita/steckdose/commit/f98a7ed47c006007a3bb1a003e3399008236dfd2))
+
 # [1.9.0](https://github.com/jamashita/steckdose/compare/v1.8.0...v1.9.0) (2023-01-14)
 
 
