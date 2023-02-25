@@ -8,7 +8,12 @@ export class Config {
   private readonly config: PlainObject;
 
   public constructor(dir: string, env: string) {
-    this.config = this.load(dir, env);
+    const defaultConfig: PlainObject = this.loadDefault(dir);
+    const envConfig: PlainObject = this.load(dir, env);
+    this.config = {
+      ...defaultConfig,
+      ...envConfig
+    };
   }
 
   public get<T>(property: string): T {
@@ -59,6 +64,19 @@ export class Config {
     }
 
     throw new ConfigError(`Config file not found: ${dir}/${env}`);
+  }
+
+  private loadDefault(dir: string): PlainObject {
+    try {
+      return this.load(dir, 'default');
+    }
+    catch (e: unknown) {
+      if (e instanceof ConfigError) {
+        return {};
+      }
+
+      throw e;
+    }
   }
 
   private traverse(property: string): PlainObject | PlainObjectItem {

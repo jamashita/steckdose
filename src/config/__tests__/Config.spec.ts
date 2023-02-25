@@ -157,6 +157,50 @@ describe('Config', () => {
         config.get('n');
       }).toThrow(ConfigError);
     });
+
+    it('loads default file and environment file, but default is going to be overriden', () => {
+      const config: Config = new Config('config6', 'test');
+
+      expect(config.get('a')).toEqual({
+        b: {
+          c: [
+            'd',
+            'e',
+            'f'
+          ]
+        }
+      });
+      expect(config.get('a.b')).toEqual({
+        c: [
+          'd',
+          'e',
+          'f'
+        ]
+      });
+      expect(config.get('a.b.c')).toEqual([
+        'd',
+        'e',
+        'f'
+      ]);
+      expect(config.get('g')).toEqual({
+        h: {
+          i: null,
+          j: 961,
+          k: 'R4Q'
+        }
+      });
+      expect(config.get('g.h')).toEqual({
+        i: null,
+        j: 961,
+        k: 'R4Q'
+      });
+      expect(config.get('g.h.i')).toBe(null);
+      expect(config.get('g.h.j')).toBe(961);
+      expect(config.get('g.h.k')).toBe('R4Q');
+      expect(config.get('l')).toBe(128.2);
+      expect(config.get('m')).toBe(null);
+      expect(config.get('n')).toBe('o');
+    });
   });
 
   describe('has', () => {
