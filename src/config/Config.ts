@@ -6,6 +6,7 @@ import { ConfigError } from './ConfigError.js';
 
 export class Config {
   private readonly config: PlainObject;
+  private readonly cache: Map<string, unknown>;
 
   public constructor(dir: string, env: string) {
     const defaultConfig: PlainObject = this.loadDefault(dir);
@@ -14,15 +15,34 @@ export class Config {
       ...defaultConfig,
       ...envConfig
     };
+    this.cache = new Map();
   }
 
   public get<T>(property: string): T {
-    return this.traverse(property) as T;
+    const value: Ambiguous<unknown> = this.cache.get(property);
+
+    if (!Kind.isUndefined(value)) {
+      return value as T;
+    }
+
+    const v: T = this.traverse(property) as T;
+
+    this.cache.set(property, v);
+
+    return v;
   }
 
   public has(property: string): boolean {
     try {
-      this.traverse(property);
+      const value: Ambiguous<unknown> = this.cache.get(property);
+
+      if (!Kind.isUndefined(value)) {
+        return true;
+      }
+
+      const v: unknown = this.traverse(property);
+
+      this.cache.set(property, v);
 
       return true;
     }
