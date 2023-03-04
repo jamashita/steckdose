@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/jamashita/steckdose/compare/v1.10.1...v1.11.0) (2023-02-25)
+
+
+### Features
+
+* 🎸 constant instance for config ([663caa9](https://github.com/jamashita/steckdose/commit/663caa9ffb02c2c1798b962b495c739f10114490))
+
 ## [1.10.1](https://github.com/jamashita/steckdose/compare/v1.10.0...v1.10.1) (2023-02-25)
 
 
