@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/jamashita/steckdose/compare/v1.12.0...v1.13.0) (2023-03-04)
+
+
+### Features
+
+* 🎸 data caching ([e6e32fa](https://github.com/jamashita/steckdose/commit/e6e32fa6a41e854b44bb644878d1c9e14cb4aa65))
+
 # [1.12.0](https://github.com/jamashita/steckdose/compare/v1.11.0...v1.12.0) (2023-03-04)
 
 
