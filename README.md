@@ -5,16 +5,22 @@ This package empowers you to develop.
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![CI](https://github.com/jamashita/steckdose/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/jamashita/steckdose/actions/workflows/ci.yml)
+[![CI](https://github.com/jamashita/steckdose/actions/workflows/ci.yml/badge.svg)](https://github.com/jamashita/steckdose/actions/workflows/ci.yml)
+
+## Install
+
+```text
+yarn add @jamashita/steckdose
+```
 
 ## Requisite
 
 ```
 > node -v
-v18.9.1
+v19.7.0
 
 > npm -v
-8.19.1
+9.5.0
 
 > yarn -v
 1.22.19
@@ -35,12 +41,12 @@ A class for generating and comparing cryptographic hashes, using bcrypt.
 Returns a new `Digest` instance, with the specified number of `rounds` for the bcrypt algorithm. The higher the number
 of `rounds`, the more secure the resulting hash will be, but it will also take longer to generate.
 
-### `digest.compare(str: string, hash: string): Promise<boolean>`
+### `Digest.prototype.compare(str: string, hash: string): Promise<boolean>`
 
 Compares the given `str` with the provided `hash`, and returns a promise that resolves to `true` if they match,
 and `false` otherwise.
 
-### `digest.generate(str: string): Promise<string>`
+### `Digest.prototype.generate(str: string): Promise<string>`
 
 Generates a cryptographic hash of the provided `str`, using the number of rounds specified in the Digest constructor.
 Returns a promise that resolves to the resulting hash.
@@ -73,11 +79,11 @@ A class for tokenizing a string by a certain delimiter.
 
 Returns a Tokenizer instance.
 
-### `tokenizer.count(): number`
+### `Tokenizer.prototype.count(): number`
 
 Returns the number of tokens.
 
-### `tokenizer.getTokens(): string[]`
+### `Tokenizer.prototype.getTokens(): string[]`
 
 Returns the tokens as an array.
 
