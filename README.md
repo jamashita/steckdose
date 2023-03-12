@@ -7,6 +7,12 @@ This package empowers you to develop.
 
 [![CI](https://github.com/jamashita/steckdose/actions/workflows/ci.yml/badge.svg)](https://github.com/jamashita/steckdose/actions/workflows/ci.yml)
 
+## Install
+
+```text
+yarn add @jamashita/steckdose
+```
+
 ## Requisite
 
 ```
