@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/jamashita/steckdose/compare/v1.14.0...v1.15.0) (2023-03-19)
+
+
+### Features
+
+* 🎸 Arithmetic class ([10ec882](https://github.com/jamashita/steckdose/commit/10ec882d930390eb0acffd777c4cb9d0fef7af4c))
+
 # [1.14.0](https://github.com/jamashita/steckdose/compare/v1.13.0...v1.14.0) (2023-03-12)
 
 
