@@ -1,3 +1,12 @@
+# [1.17.0](https://github.com/jamashita/steckdose/compare/v1.16.0...v1.17.0) (2023-03-19)
+
+
+### Features
+
+* 🎸 average, deviation, median, variance ([3029535](https://github.com/jamashita/steckdose/commit/30295359e2b964af4fc91e484f90ede017fb331b))
+* 🎸 combination, factorial, permutation ([372e24f](https://github.com/jamashita/steckdose/commit/372e24f0b9bb45d93abbc139d1cba98b5184ffae))
+* 🎸 inverse ([7d5fa3a](https://github.com/jamashita/steckdose/commit/7d5fa3ae4f7763f5a95ea4919fc94d33c793b6b4))
+
 # [1.16.0](https://github.com/jamashita/steckdose/compare/v1.15.0...v1.16.0) (2023-03-19)
 
 
