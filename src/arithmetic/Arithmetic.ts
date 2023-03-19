@@ -20,7 +20,11 @@ export class Arithmetic {
   }
 
   public static lcm(greater: number, less: number): number {
-    return greater * less / Arithmetic.gcd(greater, less);
+    if (greater === 0 || less === 0) {
+      return 0;
+    }
+
+    return greater / Arithmetic.gcd(greater, less) * less;
   }
 
   public static negate(num: number): number {

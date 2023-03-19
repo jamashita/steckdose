@@ -52,6 +52,12 @@ describe('Arithmetic', () => {
   });
 
   describe('lcm', () => {
+    it('returns 0 when either argument is 0', () => {
+      expect(Arithmetic.lcm(0, 5)).toBe(0);
+      expect(Arithmetic.lcm(2, 0)).toBe(0);
+      expect(Arithmetic.lcm(0, 0)).toBe(0);
+    });
+
     it('throws ArithmeticError when either argument is less than 0', () => {
       expect(() => {
         Arithmetic.lcm(2, -5);
