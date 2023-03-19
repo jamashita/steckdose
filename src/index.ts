@@ -1,3 +1,4 @@
+export * from './arithmetic/index.js';
 export * from './config/index.js';
 export * from './digest/index.js';
 export * from './json/index.js';
