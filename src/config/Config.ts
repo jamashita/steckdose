@@ -83,7 +83,7 @@ export class Config {
       return YAML.parse(yaml) as PlainObject;
     }
 
-    throw new ConfigError(`Config file not found: ${dir}/${env}`);
+    throw new ConfigError(`CONFIG FILE NOT FOUND: ${dir}/${env}`);
   }
 
   private loadDefault(dir: string): PlainObject {
@@ -111,7 +111,7 @@ export class Config {
         return value;
       }
 
-      throw new ConfigError('Cannot traverse primitive value');
+      throw new ConfigError('CANNOT TRAVERSE PRIMITIVE VALUE.');
     }
     if (elements.length === 0) {
       return value;
@@ -124,7 +124,7 @@ export class Config {
     const v: Ambiguous<PlainObjectItem> = value[key] as Ambiguous<PlainObjectItem>;
 
     if (Kind.isUndefined(v)) {
-      throw new ConfigError(`Config property not found: ${key}`);
+      throw new ConfigError(`CONFIG PROPERY NOT FOUND: ${key}`);
     }
 
     return this.traverseRecursive(rest, v);
