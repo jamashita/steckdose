@@ -1,3 +1,17 @@
+# [1.16.0](https://github.com/jamashita/steckdose/compare/v1.15.0...v1.16.0) (2023-03-19)
+
+
+### Features
+
+* 🎸 Arithmetic ([94834dc](https://github.com/jamashita/steckdose/commit/94834dce778707e24638dfc7e1959563a3395dd1))
+* 🎸 Arithmetic.lcm() ([c0a7c9a](https://github.com/jamashita/steckdose/commit/c0a7c9a25839319999caa6312f3b144944d0a3e6))
+* 🎸 Arithmetic.random(), float(), integer() ([aacc66c](https://github.com/jamashita/steckdose/commit/aacc66c5e460277ed3ec1edadb27dc48844349c1))
+* 🎸 packages updated ([2283385](https://github.com/jamashita/steckdose/commit/228338586d892ee789d2494263db6062986fb612))
+* 🎸 Random.float() ([aab48a5](https://github.com/jamashita/steckdose/commit/aab48a578aa10de701c33700a8cf87ad7ce9e0b1))
+* 🎸 Random.rantom(), string() ([7739d2c](https://github.com/jamashita/steckdose/commit/7739d2c00c14b30d84ff192243929b2185cc8c2e))
+* 🎸 return 0 when either argument is 0 ([0c3515d](https://github.com/jamashita/steckdose/commit/0c3515d1343b90aadaf5cb4db8e200f4928185f8))
+* 🎸 ver down ([020c5ac](https://github.com/jamashita/steckdose/commit/020c5ac792d3046647ac05895482e71d4c75bb60))
+
 # [1.15.0](https://github.com/jamashita/steckdose/compare/v1.14.0...v1.15.0) (2023-03-19)
 
 
