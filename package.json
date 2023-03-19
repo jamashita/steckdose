@@ -17,6 +17,12 @@
         "default": "./dist/index.js"
       }
     },
+    "./arithmetic": {
+      "import": {
+        "types": "./dist/arithmetic/index.d.ts",
+        "default": "./dist/arithmetic/index.js"
+      }
+    },
     "./config": {
       "import": {
         "types": "./dist/config/index.d.ts",
