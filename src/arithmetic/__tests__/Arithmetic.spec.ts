@@ -51,6 +51,48 @@ describe('Arithmetic', () => {
     });
   });
 
+  describe('lcm', () => {
+    it('throws ArithmeticError when either argument is less than 0', () => {
+      expect(() => {
+        Arithmetic.lcm(2, -5);
+      }).toThrow(ArithmeticError);
+      expect(() => {
+        Arithmetic.lcm(-2, 5);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is less than the second argument', () => {
+      expect(() => {
+        Arithmetic.lcm(2, 5);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when either argument is NaN', () => {
+      expect(() => {
+        Arithmetic.lcm(2, NaN);
+      }).toThrow(ArithmeticError);
+      expect(() => {
+        Arithmetic.lcm(NaN, 5);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the least common multiple of two numbers', () => {
+      expect(Arithmetic.lcm(8, 6)).toEqual(24);
+      expect(Arithmetic.lcm(23, 17)).toEqual(391);
+      expect(Arithmetic.lcm(18, 12)).toEqual(36);
+      expect(Arithmetic.lcm(9, 4)).toEqual(36);
+    });
+
+    it('throws ArithmeticError if either argument is not a positive number', () => {
+      expect(() => {
+        Arithmetic.lcm(2, -5);
+      }).toThrow(ArithmeticError);
+      expect(() => {
+        Arithmetic.lcm(-2, 5);
+      }).toThrow(ArithmeticError);
+    });
+  });
+
   describe('negate', () => {
     it('returns the negative number of the argument', () => {
       expect(Arithmetic.negate(123)).toBe(-123);
