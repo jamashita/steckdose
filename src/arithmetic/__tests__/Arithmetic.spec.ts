@@ -3,6 +3,30 @@ import { ArithmeticError } from '../ArithmeticError.js';
 
 describe('Arithmetic', () => {
   describe('gcd', () => {
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.gcd(NaN, 24);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is NaN', () => {
+      expect(() => {
+        Arithmetic.gcd(16, NaN);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.gcd(24.1, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.gcd(24, 16.1);
+      }).toThrow(ArithmeticError);
+    });
+
     it('throws ArithmeticError when the first argument is less than 0', () => {
       expect(() => {
         Arithmetic.gcd(-1, 24);
@@ -18,18 +42,6 @@ describe('Arithmetic', () => {
     it('throws ArithmeticError when the first argument is less than the second argument', () => {
       expect(() => {
         Arithmetic.gcd(16, 24);
-      }).toThrow(ArithmeticError);
-    });
-
-    it('throws ArithmeticError when the first argument is NaN', () => {
-      expect(() => {
-        Arithmetic.gcd(NaN, 24);
-      }).toThrow(ArithmeticError);
-    });
-
-    it('throws ArithmeticError when the second argument is NaN', () => {
-      expect(() => {
-        Arithmetic.gcd(16, NaN);
       }).toThrow(ArithmeticError);
     });
 
@@ -56,6 +68,30 @@ describe('Arithmetic', () => {
       expect(Arithmetic.lcm(0, 5)).toBe(0);
       expect(Arithmetic.lcm(2, 0)).toBe(0);
       expect(Arithmetic.lcm(0, 0)).toBe(0);
+    });
+
+    it('throws ArithmeticError when the first argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.lcm(5.1, 2);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.lcm(5, 2.1);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.lcm(NaN, 5);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is NaN', () => {
+      expect(() => {
+        Arithmetic.lcm(5, NaN);
+      }).toThrow(ArithmeticError);
     });
 
     it('throws ArithmeticError when either argument is less than 0', () => {
