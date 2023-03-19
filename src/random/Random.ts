@@ -8,6 +8,26 @@ const mersenne: MersenneTwister = new MersenneTwister();
 export class Random {
 
   /**
+   * returns min <= x < max
+   * @param min
+   * @param max
+   */
+  public static float(min: number, max: number): number {
+    if (Kind.isNaN(min) || Kind.isNaN(max)) {
+      throw new RandomError(`MIN OR MAX IS NaN: GIVEN: min = ${min}, max = ${max}`);
+    }
+    if (min > max) {
+      throw new RandomError(`MIN IS GREATER THAN MAX: GIVEN: min = ${min}, max = ${max}`);
+    }
+    if (min === max) {
+      return min;
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-extra-parens
+    return (Random.random() * (max - min)) + min;
+  }
+
+  /**
    * returns min <= x <= max
    * @param min
    * @param max
