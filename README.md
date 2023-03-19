@@ -13,7 +13,7 @@ This package empowers you to develop.
 yarn add @jamashita/steckdose
 ```
 
-## Requisite
+## Prerequisite
 
 ```
 > node -v
