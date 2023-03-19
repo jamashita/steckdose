@@ -30,14 +30,12 @@ export class Arithmetic {
     return Arithmetic.permutation(n, m) / Arithmetic.factorial(m);
   }
 
-  // TODO TEST
   public static deviation(iterable: Iterable<number>): number {
     const va: number = Arithmetic.variance(iterable);
 
     return Math.sqrt(va);
   }
 
-  // TODO TEST
   /**
    * n! = n * (n - 1) * (n - 2) * ... * 1
    * @param n
@@ -117,7 +115,6 @@ export class Arithmetic {
     return greater / Arithmetic.gcd(greater, less) * less;
   }
 
-  // TODO TEST
   public static median(iterable: Iterable<number>): number {
     const arr: Array<number> = [...iterable];
 
@@ -169,7 +166,6 @@ export class Arithmetic {
     return Random.random();
   }
 
-  // TODO TEST
   public static variance(iterable: Iterable<number>): number {
     const avg: number = Arithmetic.average(iterable);
     const arr: Array<number> = [...iterable];

@@ -77,6 +77,20 @@ describe('Arithmetic', () => {
     });
   });
 
+  describe('deviation', () => {
+    it('throws ArithmeticError when the iterable is empty', () => {
+      expect(() => {
+        Arithmetic.deviation([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the deviation of the iterable', () => {
+      expect(Arithmetic.deviation([1, 2, 3])).toBe(Math.sqrt(2 / 3));
+      expect(Arithmetic.deviation([1, 2, 3, 4])).toBe(Math.sqrt(1.25));
+      expect(Arithmetic.deviation([1, 2, 3, 4, 5])).toBe(Math.sqrt(2));
+    });
+  });
+
   describe('gcd', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
@@ -210,6 +224,23 @@ describe('Arithmetic', () => {
     });
   });
 
+  describe('median', () => {
+    it('throws ArithmeticError when the argument is an empty array', () => {
+      expect(() => {
+        Arithmetic.median([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the median of an array of numbers', () => {
+      expect(Arithmetic.median([1, 2, 3, 4, 5])).toBe(3);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6])).toBe(3.5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7])).toBe(4);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8])).toBe(4.5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toBe(5.5);
+    });
+  });
+
   describe('negate', () => {
     it('returns the negative number of the argument', () => {
       expect(Arithmetic.negate(123)).toBe(-123);
@@ -275,6 +306,23 @@ describe('Arithmetic', () => {
       expect(Arithmetic.permutation(5, 3)).toBe(60);
       expect(Arithmetic.permutation(5, 4)).toBe(120);
       expect(Arithmetic.permutation(5, 5)).toBe(120);
+    });
+  });
+
+  describe('variance', () => {
+    it('throws ArithmeticError when the argument is an empty array', () => {
+      expect(() => {
+        Arithmetic.variance([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the variance of an array of numbers', () => {
+      expect(Arithmetic.variance([1, 2, 3, 4, 5])).toBe(2);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6])).toBe(2.9166666666666665);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7])).toBe(4);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8])).toBe(5.25);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(6.666666666666667);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toBe(8.25);
     });
   });
 });
