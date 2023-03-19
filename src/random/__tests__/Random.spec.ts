@@ -32,12 +32,12 @@ describe('Random', () => {
       }
     });
 
-    it('returns [min, max] range of value', async () => {
+    it('returns [min, max] range of value', () => {
       const min: number = 1;
       const max: number = 100;
 
-      const arr: Array<Promise<void>> = sequence(10_000).map<Promise<number>>(() => {
-        return Promise.resolve<number>(Random.integer(min, max));
+      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
+        return Promise.resolve(Random.integer(min, max));
       }).map(async (promise: Promise<number>) => {
         const v: number = await promise;
 
@@ -45,7 +45,38 @@ describe('Random', () => {
         expect(v).toBeLessThanOrEqual(max);
       });
 
-      return Promise.resolve(arr);
+      return Promise.all(arr);
+    });
+  });
+
+  describe('random', () => {
+    it('returns 0 <= x < 1', () => {
+      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
+        return Promise.resolve(Random.random());
+      }).map(async (promise: Promise<number>) => {
+        const v: number = await promise;
+
+        expect(v).toBeGreaterThanOrEqual(0);
+        expect(v).toBeLessThan(1);
+      });
+
+      return Promise.all(arr);
+    });
+  });
+
+  describe('string', () => {
+    it('returns specified length alphabetical string', () => {
+      const length: number = 10;
+      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
+        return Promise.resolve(Random.string(length));
+      }).map(async (promise: Promise<string>) => {
+        const v: string = await promise;
+
+        expect(v.length).toBe(length);
+        expect(v).toMatch(/[a-zA-Z]+/u);
+      });
+
+      return Promise.all(arr);
     });
   });
 });
