@@ -111,7 +111,7 @@ export class Config {
         return value;
       }
 
-      throw new ConfigError('CANNOT TRAVERSE PRIMITIVE VALUE.');
+      throw new ConfigError('CANNOT TRAVERSE PRIMITIVE VALUE');
     }
     if (elements.length === 0) {
       return value;
