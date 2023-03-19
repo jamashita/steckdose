@@ -107,6 +107,17 @@ export class Arithmetic {
     }
   }
 
+  public static inverse(num: number): number {
+    if (Kind.isNaN(num)) {
+      throw new ArithmeticError('NaN IS NOT INVERTIBLE');
+    }
+    if (num === 0) {
+      throw new ArithmeticError('DIVIDED BY ZERO');
+    }
+
+    return 1 / num;
+  }
+
   public static lcm(greater: number, less: number): number {
     if (greater === 0 || less === 0) {
       return 0;

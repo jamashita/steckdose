@@ -152,6 +152,26 @@ describe('Arithmetic', () => {
     });
   });
 
+  describe('inverse', () => {
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.inverse(NaN);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is 0', () => {
+      expect(() => {
+        Arithmetic.inverse(0);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the inverse of the number', () => {
+      expect(Arithmetic.inverse(2)).toBe(0.5);
+      expect(Arithmetic.inverse(0.5)).toBe(2);
+      expect(Arithmetic.inverse(0.25)).toBe(4);
+    });
+  });
+
   describe('lcm', () => {
     it('returns 0 when either argument is 0', () => {
       expect(Arithmetic.lcm(0, 5)).toBe(0);
