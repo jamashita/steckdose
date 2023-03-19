@@ -2,6 +2,95 @@ import { Arithmetic } from '../Arithmetic.js';
 import { ArithmeticError } from '../ArithmeticError.js';
 
 describe('Arithmetic', () => {
+  describe('average', () => {
+    it('throws ArithmeticError when the iterable is empty', () => {
+      expect(() => {
+        Arithmetic.average([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the average of the iterable', () => {
+      expect(Arithmetic.average([1, 2, 3])).toBe(2);
+      expect(Arithmetic.average([1, 2, 3, 4])).toBe(2.5);
+      expect(Arithmetic.average([1, 2, 3, 4, 5])).toBe(3);
+    });
+  });
+
+  describe('combination', () => {
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.combination(NaN, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is NaN', () => {
+      expect(() => {
+        Arithmetic.combination(24, NaN);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.combination(24.1, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.combination(24, 16.1);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is less than 0', () => {
+      expect(() => {
+        Arithmetic.combination(-24, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is less than 0', () => {
+      expect(() => {
+        Arithmetic.combination(24, -16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is less than the second argument', () => {
+      expect(() => {
+        Arithmetic.combination(16, 24);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns 1 when the second argument is 0', () => {
+      expect(Arithmetic.combination(5, 0)).toBe(1);
+    });
+
+    it('returns 1 when the first argument is equal to the second argument', () => {
+      expect(Arithmetic.combination(5, 5)).toBe(1);
+    });
+
+    it('returns the combination of the two arguments', () => {
+      expect(Arithmetic.combination(5, 0)).toBe(1);
+      expect(Arithmetic.combination(5, 1)).toBe(5);
+      expect(Arithmetic.combination(5, 2)).toBe(10);
+      expect(Arithmetic.combination(5, 3)).toBe(10);
+      expect(Arithmetic.combination(5, 4)).toBe(5);
+      expect(Arithmetic.combination(5, 5)).toBe(1);
+    });
+  });
+
+  describe('deviation', () => {
+    it('throws ArithmeticError when the iterable is empty', () => {
+      expect(() => {
+        Arithmetic.deviation([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the deviation of the iterable', () => {
+      expect(Arithmetic.deviation([1, 2, 3])).toBe(Math.sqrt(2 / 3));
+      expect(Arithmetic.deviation([1, 2, 3, 4])).toBe(Math.sqrt(1.25));
+      expect(Arithmetic.deviation([1, 2, 3, 4, 5])).toBe(Math.sqrt(2));
+    });
+  });
+
   describe('gcd', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
@@ -60,6 +149,26 @@ describe('Arithmetic', () => {
 
     it('returns the number itself when both numbers are equal', () => {
       expect(Arithmetic.gcd(123, 123)).toBe(123);
+    });
+  });
+
+  describe('inverse', () => {
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.inverse(NaN);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is 0', () => {
+      expect(() => {
+        Arithmetic.inverse(0);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the inverse of the number', () => {
+      expect(Arithmetic.inverse(2)).toBe(0.5);
+      expect(Arithmetic.inverse(0.5)).toBe(2);
+      expect(Arithmetic.inverse(0.25)).toBe(4);
     });
   });
 
@@ -135,6 +244,23 @@ describe('Arithmetic', () => {
     });
   });
 
+  describe('median', () => {
+    it('throws ArithmeticError when the argument is an empty array', () => {
+      expect(() => {
+        Arithmetic.median([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the median of an array of numbers', () => {
+      expect(Arithmetic.median([1, 2, 3, 4, 5])).toBe(3);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6])).toBe(3.5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7])).toBe(4);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8])).toBe(4.5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(5);
+      expect(Arithmetic.median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toBe(5.5);
+    });
+  });
+
   describe('negate', () => {
     it('returns the negative number of the argument', () => {
       expect(Arithmetic.negate(123)).toBe(-123);
@@ -147,6 +273,76 @@ describe('Arithmetic', () => {
 
     it('returns NaN when the argument is NaN', () => {
       expect(Arithmetic.negate(NaN)).toBe(NaN);
+    });
+  });
+
+  describe('permutation', () => {
+    it('throws ArithmeticError when the first argument is NaN', () => {
+      expect(() => {
+        Arithmetic.permutation(NaN, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is NaN', () => {
+      expect(() => {
+        Arithmetic.permutation(24, NaN);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.permutation(24.1, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is not an integer', () => {
+      expect(() => {
+        Arithmetic.permutation(24, 16.1);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is less than 0', () => {
+      expect(() => {
+        Arithmetic.permutation(-24, 16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the second argument is less than 0', () => {
+      expect(() => {
+        Arithmetic.permutation(24, -16);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('throws ArithmeticError when the first argument is less than the second argument', () => {
+      expect(() => {
+        Arithmetic.permutation(16, 24);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the permutation of the two arguments', () => {
+      expect(Arithmetic.permutation(5, 0)).toBe(1);
+      expect(Arithmetic.permutation(5, 1)).toBe(5);
+      expect(Arithmetic.permutation(5, 2)).toBe(20);
+      expect(Arithmetic.permutation(5, 3)).toBe(60);
+      expect(Arithmetic.permutation(5, 4)).toBe(120);
+      expect(Arithmetic.permutation(5, 5)).toBe(120);
+    });
+  });
+
+  describe('variance', () => {
+    it('throws ArithmeticError when the argument is an empty array', () => {
+      expect(() => {
+        Arithmetic.variance([]);
+      }).toThrow(ArithmeticError);
+    });
+
+    it('returns the variance of an array of numbers', () => {
+      expect(Arithmetic.variance([1, 2, 3, 4, 5])).toBe(2);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6])).toBe(2.9166666666666665);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7])).toBe(4);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8])).toBe(5.25);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(6.666666666666667);
+      expect(Arithmetic.variance([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toBe(8.25);
     });
   });
 });
