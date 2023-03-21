@@ -80,7 +80,7 @@
     "update:upgrade": "ncu --packageManager yarn --deep --upgrade"
   },
   "dependencies": {
-    "@jamashita/anden": "1.13.0",
+    "@jamashita/anden": "1.14.0",
     "bcrypt": "5.1.0",
     "mersenne-twister": "1.1.0",
     "yaml": "2.2.1"
@@ -97,7 +97,7 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/bcrypt": "5.0.0",
     "@types/mersenne-twister": "1.1.2",
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "git-cz": "4.9.0",
     "husky": "8.0.3",
     "is-ci": "3.0.1",
