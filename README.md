@@ -139,17 +139,41 @@ Regardless of the specified environment, the package will attempt to read the `d
 or `default.yaml` file. If it exists, it will be merged with the environment-specific file to create the final
 configuration object.
 
-### `config.prototype.get<T>(property: string): T`
+### `Config.prototype.get<T>(property: string): T`
 
 Retrieves the value of a specified property from the configuration object. The property parameter is a string that
 represents the name of the property to retrieve, and it can handle nested properties using a dot-notation (e.g. a.b.c).
 The method returns a value of the specified type `T`.
 
-### `config.prototype.has(property: string): boolean`
+### `Config.prototype.has(property: string): boolean`
 
 Checks if a specified property exists in the configuration object. The property parameter is a string that represents
 the name of the property to check and supports dot-notation for nested properties (e.g. a.b.c). The method returns a
 boolean value indicating whether the property exists in the configuration object.
+
+## Delay
+
+A class for delaying the process for a certain amount of time in milliseconds.
+
+### `Delay.debounce<T extends AnyFunction>(callback: T, ms: number): NoReturn<T>`
+
+Creates a new function that will delay the execution of `callback` by `ms` milliseconds. The new function will be
+returned and it can be used to replace the original function `callback`.
+
+### `Delay.randomWait(minMS: number, maxMS: number): Promise<void>`
+
+Creates a promise that will wait for a random number of milliseconds between `minMS` and `maxMS`. The
+Promise will resolve with void after the specified random wait time has passed.
+
+### `Delay.throttle<T extends AnyFunction>(callback: T, ms: number): NoReturn<T>`
+
+Creates a new function that will limit the rate of execution of `callback` to once every `ms` milliseconds. The returned
+function will replace the original `callback` and can be used in its place. The returned function will be called
+immediately, and subsequent calls to the function will be ignored until `ms` milliseconds have passed.
+
+### `Delay.wait(ms: number): Promise<void>`
+
+Returns a Promise that will resolve after `ms` milliseconds have passed.
 
 ## Digest
 
@@ -222,18 +246,6 @@ Returns the number of tokens.
 ### `Tokenizer.prototype.getTokens(): string[]`
 
 Returns the tokens as an array.
-
-## Wait
-
-A class for delaying the process for a certain amount of time in milliseconds.
-
-### `Wait.for(ms: number): Promise<void>`
-
-Waits for the given ms milliseconds before resolving the promise.
-
-### `Wait.approximatelyFor(minMS: number, maxMS: number): Promise<void>`
-
-Waits for a random amount of time between minMS and maxMS milliseconds, inclusive, before resolving the promise.
 
 ## License
 
