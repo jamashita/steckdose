@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/jamashita/steckdose/compare/v1.17.0...v1.18.0) (2023-03-21)
+
+
+### Features
+
+* 🎸 (breaking) Wait -> Delay ([583e843](https://github.com/jamashita/steckdose/commit/583e8430312b9a2152f8b21058b94b186171d119))
+
 # [1.17.0](https://github.com/jamashita/steckdose/compare/v1.16.0...v1.17.0) (2023-03-19)
 
 
