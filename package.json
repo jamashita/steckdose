@@ -29,6 +29,12 @@
         "default": "./dist/config/index.js"
       }
     },
+    "./delay": {
+      "import": {
+        "types": "./dist/delay/index.d.ts",
+        "default": "./dist/delay/index.js"
+      }
+    },
     "./digest": {
       "import": {
         "types": "./dist/digest/index.d.ts",
@@ -51,12 +57,6 @@
       "import": {
         "types": "./dist/tokenizer/index.d.ts",
         "default": "./dist/tokenizer/index.js"
-      }
-    },
-    "./wait": {
-      "import": {
-        "types": "./dist/wait/index.d.ts",
-        "default": "./dist/wait/index.js"
       }
     }
   },

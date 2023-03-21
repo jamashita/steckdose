@@ -72,21 +72,21 @@ export class Arithmetic {
     }
   }
 
-  public static gcd(greater: number, less: number): number {
-    if (!Kind.isInteger(greater) || !Kind.isInteger(less)) {
-      throw new ArithmeticError(`greater AND less MUST BE INTEGER: ${greater}, ${less}`);
+  public static gcd(n: number, m: number): number {
+    if (!Kind.isInteger(n) || !Kind.isInteger(m)) {
+      throw new ArithmeticError(`greater AND less MUST BE INTEGER: ${n}, ${m}`);
     }
-    if (less < 0 || greater < 0) {
-      throw new ArithmeticError(`less AND greater MUST NOT BE NEGATIVE: ${greater}, ${less}`);
+    if (m < 0 || n < 0) {
+      throw new ArithmeticError(`less AND greater MUST NOT BE NEGATIVE: ${n}, ${m}`);
     }
-    if (less > greater) {
-      throw new ArithmeticError(`less MUST BE LESS THAN OR EQUAL TO greater: ${greater}, ${less}`);
+    if (m > n) {
+      throw new ArithmeticError(`less MUST BE LESS THAN OR EQUAL TO greater: ${n}, ${m}`);
     }
-    if (less === 0) {
-      return greater;
+    if (m === 0) {
+      return n;
     }
 
-    return Arithmetic.gcd(less, greater % less);
+    return Arithmetic.gcd(m, n % m);
   }
 
   /**
@@ -118,12 +118,12 @@ export class Arithmetic {
     return 1 / num;
   }
 
-  public static lcm(greater: number, less: number): number {
-    if (greater === 0 || less === 0) {
+  public static lcm(n: number, m: number): number {
+    if (n === 0 || m === 0) {
       return 0;
     }
 
-    return greater / Arithmetic.gcd(greater, less) * less;
+    return n / Arithmetic.gcd(n, m) * m;
   }
 
   public static median(iterable: Iterable<number>): number {
