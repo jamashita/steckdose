@@ -7,6 +7,10 @@ This package empowers you to develop.
 
 [![CI](https://github.com/jamashita/steckdose/actions/workflows/ci.yml/badge.svg)](https://github.com/jamashita/steckdose/actions/workflows/ci.yml)
 
+## TODO
+
+- [ ] Probability
+
 ## Install
 
 ```text
@@ -89,7 +93,7 @@ or equal to `min` and less than or equal to `max`.
 Calculates the inverse of a number `num`. The num parameter is the value to use in the calculation. The method returns
 the inverse of `num` as a floating-point number.
 
-If num is equal to 0, an ArithmeticError will be thrown.
+If num is equal to 0, an `ArithmeticError` will be thrown.
 
 ### `Arithmetic.median(iterable: Iterable<number>): number`
 
@@ -219,6 +223,12 @@ function returns a random number that is greater than or equal to `min` and less
 
 Generates a random integer in the range [min, max], inclusive. The function returns a random number that is greater than
 or equal to `min` and less than or equal to `max`.
+
+### `Random.pick<T>(iterable: Iterable<T>): T`
+
+Returns a random element from the provided `iterable`.
+
+If the `iterable` is empty, a `RandomError` will be thrown.
 
 ### `Random.random(): number`
 
