@@ -14,18 +14,18 @@ export class CompositeOpportunity implements Opportunity {
   }
 
   public happens(): boolean {
+    const leftHappens: boolean = this.left.happens();
+    const rightHappens: boolean = this.right.happens();
+
     switch (this.operator) {
       case 'and': {
-        return this.left.happens() && this.right.happens();
+        return leftHappens && rightHappens;
       }
       case 'or': {
-        return this.left.happens() || this.right.happens();
+        return leftHappens || rightHappens;
       }
       case 'xor':
       default: {
-        const leftHappens: boolean = this.left.happens();
-        const rightHappens: boolean = this.right.happens();
-
         return (leftHappens || rightHappens) && !(leftHappens && rightHappens);
       }
     }
