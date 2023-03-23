@@ -46,6 +46,17 @@ export class Random {
     return Math.floor(Random.random() * (max + 1 - min)) + min;
   }
 
+  public static pick<T>(iterable: Iterable<T>): T {
+    const array: Array<T> = [...iterable];
+
+    if (array.length === 0) {
+      throw new RandomError('ITERABLE IS EMPTY');
+    }
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    return array[Random.integer(0, array.length - 1)]!;
+  }
+
   /**
    * returns 0 <= x < 1
    */
