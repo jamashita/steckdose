@@ -1,7 +1,6 @@
-import { Kind, Nullable } from '@jamashita/anden/type';
+import { AnyFunction, Kind, Nullable } from '@jamashita/anden/type';
 import { Random } from '../random/index.js';
 
-type AnyFunction = (...args: Array<unknown>) => unknown;
 type NoReturn<T extends AnyFunction> = (args: Parameters<T>) => void;
 
 export class Delay {

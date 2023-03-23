@@ -107,6 +107,22 @@ describe('Random', () => {
     });
   });
 
+  describe('pick', () => {
+    it('picks a random element from the iterable', () => {
+      const iterable: Array<number> = [1, 2, 3, 4, 5];
+
+      for (let i: number = 0; i < 10_000; i++) {
+        expect(iterable).toContain(Random.pick(iterable));
+      }
+    });
+
+    it('throws RandomError when iterable is empty', () => {
+      expect(() => {
+        Random.pick([]);
+      }).toThrow(RandomError);
+    });
+  });
+
   describe('random', () => {
     it('returns 0 <= x < 1', () => {
       const arr: Array<Promise<void>> = sequence(10_000).map(() => {
