@@ -1,4 +1,5 @@
 import { CompositeOpportunity } from './CompositeOpportunity.js';
+import { NegationOpportunity } from './NegationOpportunity.js';
 import { Opportunity } from './Opportunity.js';
 
 export class Probability implements Opportunity {
@@ -14,6 +15,10 @@ export class Probability implements Opportunity {
 
   public happens(): boolean {
     return this.opportunity.happens();
+  }
+
+  public not(): Probability {
+    return new Probability(new NegationOpportunity(this.opportunity));
   }
 
   public or(other: Probability): Probability {

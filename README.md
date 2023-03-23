@@ -7,10 +7,6 @@ This package empowers you to develop.
 
 [![CI](https://github.com/jamashita/steckdose/actions/workflows/ci.yml/badge.svg)](https://github.com/jamashita/steckdose/actions/workflows/ci.yml)
 
-## TODO
-
-- [ ] Probability
-
 ## Install
 
 ```text
@@ -209,6 +205,59 @@ Asynchronously returns a JavaScript object from the provided JSON string.
 ### `JSONA.stringify(value: ObjectLiteral): Promise<string>`
 
 Asynchronously returns a JSON string representation of the provided JavaScript object.
+
+## Probability
+
+A class for calculating probabilities. This class implements the `Opportunity` interface.
+
+### `Probability.prototype.and(other: Probability): Probability`
+
+Returns a new `Probability` instance that represents the probability of both this event and another event occurring.
+
+### `Probability.prototype.not(): Probability`
+
+Returns a new `Probability` instance that represents the probability of the event not occurring.
+
+### `Probability.prototype.or(other: Probability): Probability`
+
+Returns a new `Probability` instance that represents the probability of at least one of the two events occurring.
+
+### `Probability.prototype.xor(other: Probability): Probability`
+
+Returns a new `Probability` instance that represents the probability of either event occurring exclusively, meaning that
+only one of the events can occur, but not both.
+
+## (interface) Opportunity
+
+An interface for defining a chance of something happening.
+
+### `Opportunity.prototype.happens(): boolean`
+
+Returns a boolean value indicating whether a random event has occurred. If the probability of the event happening is 1,
+then this method will always return `true`. If the probability is 0, then this method will always return `false`.
+Otherwise, the result is determined randomly based on the probability of the event happening.
+
+## CompositeOpportunity
+
+A class for defining a chance of something happening, based on the probability of multiple events occurring
+simultaneously. It provides methods to combine the probabilities of individual events to calculate the overall
+probability of all the events occurring together.
+
+## DecimalOpportunity
+
+A class that represents the probability of an event occurring as a decimal value. It can be used to define the chance of
+something happening based on the probability of the event occurring.
+
+## FractionOpportunity
+
+A class that represents the probability of an event occurring as a fraction value. It can be used to define the chance
+of something happening based on the probability of the event occurring. This class allows users to specify the numerator
+and denominator of a fraction.
+
+## NegationOpportunity
+
+A class that represents the probability of an event not occurring. It can be used to define the chance of something
+happening based on the probability of the event not occurring, or the absence of the event.
 
 ## Random
 
