@@ -1,3 +1,14 @@
+# [1.19.0](https://github.com/jamashita/steckdose/compare/v1.18.0...v1.19.0) (2023-03-23)
+
+
+### Features
+
+* 🎸 import AnyFunction ([f2c2cb6](https://github.com/jamashita/steckdose/commit/f2c2cb6227caacbe56e345c5ba7cd8e4c63b65e8))
+* 🎸 NegationProbability ([b2f6704](https://github.com/jamashita/steckdose/commit/b2f67047d24b630978e4a1b5378715036f6b05b7))
+* 🎸 Probability ([2d7e754](https://github.com/jamashita/steckdose/commit/2d7e754c908cb948e3bb5362b9e2ea821581fab8))
+* 🎸 Probability.prototype.not() ([1e19db8](https://github.com/jamashita/steckdose/commit/1e19db832e57af1db12a6e613ff0b3d1cda6aa14))
+* 🎸 Random.pick() ([e103b4a](https://github.com/jamashita/steckdose/commit/e103b4a9a8ed28d96108ad6babf1c14b1b8122f9))
+
 # [1.18.0](https://github.com/jamashita/steckdose/compare/v1.17.0...v1.18.0) (2023-03-21)
 
 
