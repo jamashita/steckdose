@@ -89,7 +89,7 @@
     "@jamashita/anden": "1.15.0",
     "bcrypt": "5.1.0",
     "mersenne-twister": "1.1.0",
-    "yaml": "2.2.1"
+    "yaml": "2.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.1",
