@@ -1,3 +1,12 @@
+# [1.22.0](https://github.com/jamashita/steckdose/compare/v1.21.0...v1.22.0) (2023-07-15)
+
+
+### Features
+
+* 🎸 packages updated ([13533f2](https://github.com/jamashita/steckdose/commit/13533f235a194590ce199456dddb79a69e0afebf))
+* 🎸 packages updated ([6429fd6](https://github.com/jamashita/steckdose/commit/6429fd6fd1eaa048311653d7ee2057bc372a100a))
+* 🎸 packagesu pdated ([1afe020](https://github.com/jamashita/steckdose/commit/1afe0207e631bf902c3b5f8b5effb02bc0c2ce64))
+
 # [1.21.0](https://github.com/jamashita/steckdose/compare/v1.20.0...v1.21.0) (2023-05-17)
 
 
