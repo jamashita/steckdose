@@ -41,7 +41,7 @@
         "default": "./dist/digest/index.js"
       }
     },
-    "./httpStatus": {
+    "./http": {
       "import": {
         "types": "./dist/http/index.d.ts",
         "default": "./dist/http/index.js"
