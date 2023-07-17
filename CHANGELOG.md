@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/jamashita/steckdose/compare/v1.23.0...v1.24.0) (2023-07-17)
+
+
+### Features
+
+* 🎸 status codes output path ([2f29006](https://github.com/jamashita/steckdose/commit/2f29006aa5ecfc801c21032d3af78dc5e69662b1))
+
 # [1.23.0](https://github.com/jamashita/steckdose/compare/v1.22.0...v1.23.0) (2023-07-17)
 
 
