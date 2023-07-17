@@ -41,16 +41,22 @@
         "default": "./dist/digest/index.js"
       }
     },
-    "./probability": {
+    "./httpStatus": {
       "import": {
-        "types": "./dist/probability/index.d.ts",
-        "default": "./dist/probability/index.js"
+        "types": "./dist/http/index.d.ts",
+        "default": "./dist/http/index.js"
       }
     },
     "./json": {
       "import": {
         "types": "./dist/json/index.d.ts",
         "default": "./dist/json/index.js"
+      }
+    },
+    "./probability": {
+      "import": {
+        "types": "./dist/probability/index.d.ts",
+        "default": "./dist/probability/index.js"
       }
     },
     "./random": {
