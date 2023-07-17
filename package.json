@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
         "default": "./dist/digest/index.js"
       }
     },
-    "./httpStatus": {
+    "./http": {
       "import": {
         "types": "./dist/http/index.d.ts",
         "default": "./dist/http/index.js"

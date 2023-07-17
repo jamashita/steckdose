@@ -1,3 +1,17 @@
+# [1.23.0](https://github.com/jamashita/steckdose/compare/v1.22.0...v1.23.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* 🐛 option ([700dcbd](https://github.com/jamashita/steckdose/commit/700dcbd175c44ac47714ba317bf74b3212a53bef))
+
+
+### Features
+
+* 🎸 http status ([422a1c6](https://github.com/jamashita/steckdose/commit/422a1c6452f7e5cd5bda9629a78e97bb38f326c1))
+* 🎸 packages updated ([20c9793](https://github.com/jamashita/steckdose/commit/20c9793fa97f2f1fc03984a9389adfb57aa3e3e3))
+* 🎸 tsconfig.json update ([bcd969a](https://github.com/jamashita/steckdose/commit/bcd969a2c85320711b782e7d92c1caa92de91e6d))
+
 # [1.22.0](https://github.com/jamashita/steckdose/compare/v1.21.0...v1.22.0) (2023-07-15)
 
 
