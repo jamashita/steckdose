@@ -1,6 +1,6 @@
 {
   "name": "@jamashita/steckdose",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -41,16 +41,22 @@
         "default": "./dist/digest/index.js"
       }
     },
-    "./probability": {
+    "./httpStatus": {
       "import": {
-        "types": "./dist/probability/index.d.ts",
-        "default": "./dist/probability/index.js"
+        "types": "./dist/http/index.d.ts",
+        "default": "./dist/http/index.js"
       }
     },
     "./json": {
       "import": {
         "types": "./dist/json/index.d.ts",
         "default": "./dist/json/index.js"
+      }
+    },
+    "./probability": {
+      "import": {
+        "types": "./dist/probability/index.d.ts",
+        "default": "./dist/probability/index.js"
       }
     },
     "./random": {
@@ -94,11 +100,11 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
-    "@jamashita/eslint-plugin": "1.88.0",
+    "@jamashita/eslint-plugin": "1.89.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "10.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.0.3",
+    "@semantic-release/github": "9.0.4",
     "@semantic-release/npm": "10.0.4",
     "@semantic-release/release-notes-generator": "11.0.4",
     "@types/bcrypt": "5.0.0",
@@ -108,7 +114,7 @@
     "husky": "8.0.3",
     "is-ci": "3.0.1",
     "lint-staged": "13.2.3",
-    "npm-check-updates": "16.10.15",
+    "npm-check-updates": "16.10.16",
     "rimraf": "5.0.1",
     "semantic-release": "21.0.7",
     "sort-package-json": "2.5.1",
