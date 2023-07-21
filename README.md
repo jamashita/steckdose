@@ -194,6 +194,10 @@ and `false` otherwise.
 Generates a cryptographic hash of the provided `str`, using the number of rounds specified in the Digest constructor.
 Returns a promise that resolves to the resulting hash.
 
+## HTTP
+
+An enum for representing HTTP status codes.
+
 ## JSONA
 
 A class for asynchronously parsing JSON from a string and stringifying JSON to a string.
