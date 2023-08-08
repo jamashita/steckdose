@@ -1,3 +1,11 @@
+# [1.25.0](https://github.com/jamashita/steckdose/compare/v1.24.0...v1.25.0) (2023-08-08)
+
+
+### Features
+
+* 🎸 pacakgesu pdated ([6d34490](https://github.com/jamashita/steckdose/commit/6d344900c96fab84827e6c8c2619a49df9f33b8f))
+* 🎸 status updated ([a3dd823](https://github.com/jamashita/steckdose/commit/a3dd8234c76fd22f606ce51e9b9d1b11e71ccc51))
+
 # [1.24.0](https://github.com/jamashita/steckdose/compare/v1.23.0...v1.24.0) (2023-07-17)
 
 
