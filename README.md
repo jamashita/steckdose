@@ -77,7 +77,7 @@ function returns a random number that is greater than or equal to `min` and less
 Calculates the greatest common divisor (GCD) of two positive integers `n` and `m`. The `n` and `m` parameters are the
 positive integers to use in the calculation. The method returns the GCD of `n` and `m` as an integer.
 
-If n is not a positive integer, or if n is less than m, an ArithmeticError will be thrown.
+If `n` is not a positive integer, or if `n` is less than `m`, an ArithmeticError will be thrown.
 
 ### `Arithmetic.integer(min: number, max: number): number`
 
@@ -90,6 +90,13 @@ Calculates the inverse of a number `num`. The num parameter is the value to use 
 the inverse of `num` as a floating-point number.
 
 If num is equal to 0, an `ArithmeticError` will be thrown.
+
+### `Arithmetic.lcm(n: number, m: number): number`
+
+Calculates the least common multiple (LCM) of two positive integers `n` and `m`. The `n` and `m` parameters are the
+positive integers to use in the calculation. The method returns the LCM of `n` and `m` as an integer.
+
+If `n` is not a positive integer, or if `n` is less than `m`, an `ArithmeticError` will be thrown.
 
 ### `Arithmetic.median(iterable: Iterable<number>): number`
 
