@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/jamashita/steckdose/compare/v1.27.0...v1.27.1) (2023-09-18)
+
+
+### Bug Fixes
+
+* 🐛 reqruieed version downgraded ([100eaa1](https://github.com/jamashita/steckdose/commit/100eaa122797627e97f68ae6fd1e105597050ba9))
+
 # [1.27.0](https://github.com/jamashita/steckdose/compare/v1.26.0...v1.27.0) (2023-09-18)
 
 
