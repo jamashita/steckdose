@@ -42,7 +42,7 @@ export class Arithmetic {
    */
   public static factorial(n: number): number {
     if (!Kind.isInteger(n)) {
-      throw new ArithmeticError(`n MUST BE INTEGER: ${n}`);
+      throw new ArithmeticError(`n MUST BE INTEGER: ${n as unknown as string}`);
     }
     if (n < 0) {
       throw new ArithmeticError(`n MUST NOT BE NEGATIVE: ${n}`);
