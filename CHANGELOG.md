@@ -1,3 +1,15 @@
+# [1.27.0](https://github.com/jamashita/steckdose/compare/v1.26.0...v1.27.0) (2023-09-18)
+
+
+### Bug Fixes
+
+* 🐛 output format ([521ebe3](https://github.com/jamashita/steckdose/commit/521ebe3497dfcb451576f56aa5632d7792f777c7))
+
+
+### Features
+
+* 🎸 pacakges updated ([b7ed663](https://github.com/jamashita/steckdose/commit/b7ed66353c1a28b01ca53ccc54e10c4ce02fb1c2))
+
 # [1.26.0](https://github.com/jamashita/steckdose/compare/v1.25.0...v1.26.0) (2023-08-27)
 
 
