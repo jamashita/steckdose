@@ -92,7 +92,7 @@
     "update:upgrade": "ncu --packageManager yarn --deep --upgrade"
   },
   "dependencies": {
-    "@jamashita/anden": "2.2.0",
+    "@jamashita/anden": "2.2.1",
     "bcrypt": "5.1.1",
     "mersenne-twister": "1.1.0",
     "yaml": "2.3.2"
@@ -122,7 +122,7 @@
     "vitest": "0.34.4"
   },
   "engines": {
-    "node": ">=20.x"
+    "node": ">=18.x"
   },
   "engineStrict": true,
   "publishConfig": {
