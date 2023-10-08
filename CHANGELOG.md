@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/jamashita/steckdose/compare/v1.27.1...v1.28.0) (2023-10-08)
+
+
+### Features
+
+* 🎸 pacakges updated ([4508969](https://github.com/jamashita/steckdose/commit/450896977f33251dd1eafae02ff28a5c3d2b29b8))
+
 ## [1.27.1](https://github.com/jamashita/steckdose/compare/v1.27.0...v1.27.1) (2023-09-18)
 
 
