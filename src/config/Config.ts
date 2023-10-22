@@ -1,4 +1,4 @@
-import { Ambiguous, Kind, PlainObject, PlainObjectItem } from '@jamashita/anden/type';
+import { Kind, PlainObject, PlainObjectItem, Undefinable } from '@jamashita/anden/type';
 import fs from 'fs';
 import path from 'path';
 import YAML from 'yaml';
@@ -19,7 +19,7 @@ export class Config {
   }
 
   public get<T>(property: string): T {
-    const value: Ambiguous<unknown> = this.cache.get(property);
+    const value: Undefinable<unknown> = this.cache.get(property);
 
     if (!Kind.isUndefined(value)) {
       return value as T;
@@ -34,7 +34,7 @@ export class Config {
 
   public has(property: string): boolean {
     try {
-      const value: Ambiguous<unknown> = this.cache.get(property);
+      const value: Undefinable<unknown> = this.cache.get(property);
 
       if (!Kind.isUndefined(value)) {
         return true;
@@ -121,7 +121,7 @@ export class Config {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const key: string = element!;
     // @ts-expect-error
-    const v: Ambiguous<PlainObjectItem> = value[key] as Ambiguous<PlainObjectItem>;
+    const v: Undefinable<PlainObjectItem> = value[key] as Undefinable<PlainObjectItem>;
 
     if (Kind.isUndefined(v)) {
       throw new ConfigError(`CONFIG PROPERY NOT FOUND: ${key}`);
