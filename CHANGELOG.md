@@ -1,3 +1,11 @@
+# [1.29.0](https://github.com/jamashita/steckdose/compare/v1.28.0...v1.29.0) (2023-10-22)
+
+
+### Features
+
+* 🎸 Ambiguous -> Undefinable ([d6ba1a4](https://github.com/jamashita/steckdose/commit/d6ba1a445e344c160dffdd992aaebb92423d027b))
+* 🎸 pacakges updated ([0bddfe1](https://github.com/jamashita/steckdose/commit/0bddfe1be86494ac2bb8d76d82d50ce1274f5ce2))
+
 # [1.28.0](https://github.com/jamashita/steckdose/compare/v1.27.1...v1.28.0) (2023-10-08)
 
 
