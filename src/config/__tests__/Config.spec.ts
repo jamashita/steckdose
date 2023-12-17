@@ -18,7 +18,7 @@ describe('Config', () => {
     `('load test.json when json file exists, json is prioritised, key is $key', ({
       key,
       expected
-    }: { key: string, expected: unknown }) => {
+    }: { key: string; expected: unknown; }) => {
       const config: Config = new Config('config1', 'test');
 
       expect(config.get(key)).toEqual(expected);
@@ -40,7 +40,7 @@ describe('Config', () => {
     `('load test.yml when json file does not exist, yml is prioritised, key is $key', ({
       key,
       expected
-    }: { key: string, expected: unknown }) => {
+    }: { key: string; expected: unknown; }) => {
       const config: Config = new Config('config2', 'test');
 
       expect(config.get(key)).toEqual(expected);
@@ -62,7 +62,7 @@ describe('Config', () => {
     `('load test.yaml when json and yml file does not exist, yaml is prioritised, key is $key', ({
       key,
       expected
-    }: { key: string, expected: unknown }) => {
+    }: { key: string; expected: unknown; }) => {
       const config: Config = new Config('config3', 'test');
 
       expect(config.get(key)).toEqual(expected);
@@ -91,7 +91,7 @@ describe('Config', () => {
     ${'l.m'}
     ${'l.m.n'}
     ${'n'}
-    `('throws ConfigError when config file does not have the given property, key is $key', ({ key }: { key: string }) => {
+    `('throws ConfigError when config file does not have the given property, key is $key', ({ key }: { key: string; }) => {
       const config: Config = new Config('config1', 'test');
 
       expect(() => {
@@ -115,7 +115,7 @@ describe('Config', () => {
     `('load test.json when json file exists, json is prioritised, key is $key', ({
       key,
       expected
-    }: { key: string, expected: unknown }) => {
+    }: { key: string; expected: unknown; }) => {
       const config: Config = new Config('config6', 'test');
 
       expect(config.get(key)).toEqual(expected);
@@ -135,7 +135,7 @@ describe('Config', () => {
     ${'g.h.k'}
     ${'l'}
     ${'m'}
-    `('returns true when config file has the given property, key is $key', ({ key }: { key: string }) => {
+    `('returns true when config file has the given property, key is $key', ({ key }: { key: string; }) => {
       const config: Config = new Config('config1', 'test');
 
       expect(config.has(key)).toBe(true);
@@ -150,7 +150,7 @@ describe('Config', () => {
     ${'l.m'}
     ${'l.m.n'}
     ${'n'}
-    `('returns false when config file does not have the given property, key is $key', ({ key }: { key: string }) => {
+    `('returns false when config file does not have the given property, key is $key', ({ key }: { key: string; }) => {
       const config: Config = new Config('config1', 'test');
 
       expect(config.has(key)).toBe(false);
