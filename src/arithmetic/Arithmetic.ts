@@ -2,8 +2,8 @@ import { Kind } from '@jamashita/anden/type';
 import { Random, RandomError } from '../random/index.js';
 import { ArithmeticError } from './ArithmeticError.js';
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class Arithmetic {
-
   public static average(iterable: Iterable<number>): number {
     const arr: Array<number> = [...iterable];
 
