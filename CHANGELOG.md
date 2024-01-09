@@ -1,3 +1,15 @@
+# [1.31.0](https://github.com/jamashita/steckdose/compare/v1.30.0...v1.31.0) (2024-01-09)
+
+
+### Bug Fixes
+
+* 🐛 ignore rules ([f19366b](https://github.com/jamashita/steckdose/commit/f19366b7c0f4827393ce63ec045f2be795833b12))
+
+
+### Features
+
+* 🎸 packages updated ([7a17e58](https://github.com/jamashita/steckdose/commit/7a17e5882cd7f926ec7d402a8e9cba48bbe6000b))
+
 # [1.30.0](https://github.com/jamashita/steckdose/compare/v1.29.0...v1.30.0) (2023-12-17)
 
 

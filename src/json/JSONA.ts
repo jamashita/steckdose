@@ -1,6 +1,7 @@
 import { ObjectLiteral, Reject, Resolve } from '@jamashita/anden/type';
 import { JSONAError } from './JSONAError.js';
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class JSONA {
   public static parse<T extends ObjectLiteral = ObjectLiteral>(text: string): Promise<T> {
     return new Promise((resolve: Resolve<T>, reject: Reject) => {
