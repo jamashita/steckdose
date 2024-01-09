@@ -5,6 +5,7 @@ import { RandomError } from './RandomError.js';
 const POOL: string = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const mersenne: MersenneTwister = new MersenneTwister();
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class Random {
 
   /**
