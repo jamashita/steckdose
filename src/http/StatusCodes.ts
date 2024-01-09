@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/typedef */
+
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class StatusCodes {
   public static readonly CONTINUE = 100 as const;
   public static readonly SWITCHING_PROTOCOLS = 101 as const;

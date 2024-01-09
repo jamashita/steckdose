@@ -3,6 +3,7 @@ import { Random } from '../random/index.js';
 
 type NoReturn<T extends AnyFunction> = (args: Parameters<T>) => void;
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class Delay {
   public static debounce<T extends AnyFunction>(callback: T, delay: number): NoReturn<T> {
     let id: Nullable<NodeJS.Timeout> = null;
