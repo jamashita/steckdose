@@ -81,6 +81,7 @@
   ],
   "scripts": {
     "build": "yarn clean && tsc -b tsconfig.compilation.json",
+    "check": "tsc --noEmit",
     "clean": "rimraf dist",
     "commit": "git cz",
     "format": "eslint --fix 'src/**/*.{ts,tsx}'",
@@ -100,7 +101,7 @@
   "devDependencies": {
     "@commitlint/cli": "18.4.4",
     "@commitlint/config-conventional": "18.4.4",
-    "@jamashita/eslint-plugin": "1.98.0",
+    "@jamashita/eslint-plugin": "1.98.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/commit-analyzer": "11.1.0",
     "@semantic-release/git": "10.0.1",
@@ -109,7 +110,7 @@
     "@semantic-release/release-notes-generator": "12.1.0",
     "@types/bcrypt": "5.0.2",
     "@types/mersenne-twister": "1.1.7",
-    "@types/node": "20.10.7",
+    "@types/node": "20.10.8",
     "git-cz": "4.9.0",
     "husky": "8.0.3",
     "is-ci": "3.0.1",
