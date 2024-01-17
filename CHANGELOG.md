@@ -1,3 +1,16 @@
+# [1.32.0](https://github.com/jamashita/steckdose/compare/v1.31.0...v1.32.0) (2024-01-17)
+
+
+### Bug Fixes
+
+* 🐛 namespace ([a3f9cab](https://github.com/jamashita/steckdose/commit/a3f9cab4bc3d1f4b688fd4e1bceb8e85bef32ce0))
+
+
+### Features
+
+* 🎸 packages updated ([592279f](https://github.com/jamashita/steckdose/commit/592279ff852713472a2e5e45e085c42343a1f0e8))
+* 🎸 packageusp ted ([9869e73](https://github.com/jamashita/steckdose/commit/9869e7333cb04b64928477ed6a43cff30d427ab6))
+
 # [1.31.0](https://github.com/jamashita/steckdose/compare/v1.30.0...v1.31.0) (2024-01-09)
 
 
