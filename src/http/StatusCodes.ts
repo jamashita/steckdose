@@ -1,73 +1,71 @@
-/* eslint-disable @typescript-eslint/typedef */
+// eslint-disable-next-line @typescript-eslint/no-namespace
+export namespace StatusCodes {
+  export const CONTINUE = 100;
+  export const SWITCHING_PROTOCOLS = 101;
+  export const PROCESSING = 102;
+  export const EARLY_HINTS = 103;
 
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class StatusCodes {
-  public static readonly CONTINUE = 100 as const;
-  public static readonly SWITCHING_PROTOCOLS = 101 as const;
-  public static readonly PROCESSING = 102 as const;
-  public static readonly EARLY_HINTS = 103 as const;
+  export const OK = 200;
+  export const CREATED = 201;
+  export const ACCEPTED = 202;
+  export const NON_AUTHORITATIVE_INFORMATION = 203;
+  export const NO_CONTENT = 204;
+  export const RESET_CONTENT = 205;
+  export const PARTIAL_CONTENT = 206;
+  export const MULTI_STATUS = 207;
+  export const ALREADY_REPORTED = 208;
+  export const IM_USED = 226;
 
-  public static readonly OK = 200 as const;
-  public static readonly CREATED = 201 as const;
-  public static readonly ACCEPTED = 202 as const;
-  public static readonly NON_AUTHORITATIVE_INFORMATION = 203 as const;
-  public static readonly NO_CONTENT = 204 as const;
-  public static readonly RESET_CONTENT = 205 as const;
-  public static readonly PARTIAL_CONTENT = 206 as const;
-  public static readonly MULTI_STATUS = 207 as const;
-  public static readonly ALREADY_REPORTED = 208 as const;
-  public static readonly IM_USED = 226 as const;
+  export const MULTIPLE_CHOICES = 300;
+  export const MOVED_PERMANENTLY = 301;
+  export const FOUND = 302;
+  export const SEE_OTHER = 303;
+  export const NOT_MODIFIED = 304;
+  export const USE_PROXY = 305;
+  export const TEMPORARY_REDIRECT = 307;
+  export const PERMANENT_REDIRECT = 308;
 
-  public static readonly MULTIPLE_CHOICES = 300 as const;
-  public static readonly MOVED_PERMANENTLY = 301 as const;
-  public static readonly FOUND = 302 as const;
-  public static readonly SEE_OTHER = 303 as const;
-  public static readonly NOT_MODIFIED = 304 as const;
-  public static readonly USE_PROXY = 305 as const;
-  public static readonly TEMPORARY_REDIRECT = 307 as const;
-  public static readonly PERMANENT_REDIRECT = 308 as const;
+  export const BAD_REQUEST = 400;
+  export const UNAUTHORIZED = 401;
+  export const PAYMENT_REQUIRED = 402;
+  export const FORBIDDEN = 403;
+  export const NOT_FOUND = 404;
+  export const METHOD_NOT_ALLOWED = 405;
+  export const NOT_ACCEPTABLE = 406;
+  export const PROXY_AUTHENTICATION_REQUIRED = 407;
+  export const REQUEST_TIMEOUT = 408;
+  export const CONFLICT = 409;
+  export const GONE = 410;
+  export const LENGTH_REQUIRED = 411;
+  export const PRECONDITION_FAILED = 412;
+  export const PAYLOAD_TOO_LARGE = 413;
+  export const URI_TOO_LONG = 414;
+  export const UNSUPPORTED_MEDIA_TYPE = 415;
+  export const RANGE_NOT_SATISFIABLE = 416;
+  export const EXPECTATION_FAILED = 417;
+  export const IM_A_TEAPOT = 418;
+  export const MISDIRECTED_REQUEST = 421;
+  export const UNPROCESSABLE_ENTITY = 422;
+  export const LOCKED = 423;
+  export const FAILED_DEPENDENCY = 424;
+  export const TOO_EARLY = 425;
+  export const UPGRADE_REQUIRED = 426;
+  export const PRECONDITION_REQUIRED = 428;
+  export const TOO_MANY_REQUESTS = 429;
+  export const REQUEST_HEADER_FIELDS_TOO_LARGE = 431;
+  export const UNAVAILABLE_FOR_LEGAL_REASONS = 451;
 
-  public static readonly BAD_REQUEST = 400 as const;
-  public static readonly UNAUTHORIZED = 401 as const;
-  public static readonly PAYMENT_REQUIRED = 402 as const;
-  public static readonly FORBIDDEN = 403 as const;
-  public static readonly NOT_FOUND = 404 as const;
-  public static readonly METHOD_NOT_ALLOWED = 405 as const;
-  public static readonly NOT_ACCEPTABLE = 406 as const;
-  public static readonly PROXY_AUTHENTICATION_REQUIRED = 407 as const;
-  public static readonly REQUEST_TIMEOUT = 408 as const;
-  public static readonly CONFLICT = 409 as const;
-  public static readonly GONE = 410 as const;
-  public static readonly LENGTH_REQUIRED = 411 as const;
-  public static readonly PRECONDITION_FAILED = 412 as const;
-  public static readonly PAYLOAD_TOO_LARGE = 413 as const;
-  public static readonly URI_TOO_LONG = 414 as const;
-  public static readonly UNSUPPORTED_MEDIA_TYPE = 415 as const;
-  public static readonly RANGE_NOT_SATISFIABLE = 416 as const;
-  public static readonly EXPECTATION_FAILED = 417 as const;
-  public static readonly IM_A_TEAPOT = 418 as const;
-  public static readonly MISDIRECTED_REQUEST = 421 as const;
-  public static readonly UNPROCESSABLE_ENTITY = 422 as const;
-  public static readonly LOCKED = 423 as const;
-  public static readonly FAILED_DEPENDENCY = 424 as const;
-  public static readonly TOO_EARLY = 425 as const;
-  public static readonly UPGRADE_REQUIRED = 426 as const;
-  public static readonly PRECONDITION_REQUIRED = 428 as const;
-  public static readonly TOO_MANY_REQUESTS = 429 as const;
-  public static readonly REQUEST_HEADER_FIELDS_TOO_LARGE = 431 as const;
-  public static readonly UNAVAILABLE_FOR_LEGAL_REASONS = 451 as const;
-
-  public static readonly INTERNAL_SERVER_ERROR = 500 as const;
-  public static readonly NOT_IMPLEMENTED = 501 as const;
-  public static readonly BAD_GATEWAY = 502 as const;
-  public static readonly SERVICE_UNAVAILABLE = 503 as const;
-  public static readonly GATEWAY_TIMEOUT = 504 as const;
-  public static readonly HTTP_VERSION_NOT_SUPPORTED = 505 as const;
-  public static readonly VARIANT_ALSO_NEGOTIATES = 506 as const;
-  public static readonly INSUFFICIENT_STORAGE = 507 as const;
-  public static readonly LOOP_DETECTED = 508 as const;
-  public static readonly NOT_EXTENDED = 510 as const;
-  public static readonly NETWORK_AUTHENTICATION_REQUIRED = 511 as const;
+  export const INTERNAL_SERVER_ERROR = 500;
+  export const NOT_IMPLEMENTED = 501;
+  export const BAD_GATEWAY = 502;
+  export const SERVICE_UNAVAILABLE = 503;
+  export const GATEWAY_TIMEOUT = 504;
+  export const HTTP_VERSION_NOT_SUPPORTED = 505;
+  export const VARIANT_ALSO_NEGOTIATES = 506;
+  export const INSUFFICIENT_STORAGE = 507;
+  export const LOOP_DETECTED = 508;
+  export const NOT_EXTENDED = 510;
+  export const NETWORK_AUTHENTICATION_REQUIRED = 511;
 }
 
 
