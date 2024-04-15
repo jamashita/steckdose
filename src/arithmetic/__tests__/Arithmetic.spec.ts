@@ -19,13 +19,13 @@ describe('Arithmetic', () => {
   describe('combination', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
-        Arithmetic.combination(NaN, 16);
+        Arithmetic.combination(Number.NaN, 16);
       }).toThrow(ArithmeticError);
     });
 
     it('throws ArithmeticError when the second argument is NaN', () => {
       expect(() => {
-        Arithmetic.combination(24, NaN);
+        Arithmetic.combination(24, Number.NaN);
       }).toThrow(ArithmeticError);
     });
 
@@ -94,13 +94,13 @@ describe('Arithmetic', () => {
   describe('gcd', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
-        Arithmetic.gcd(NaN, 24);
+        Arithmetic.gcd(Number.NaN, 24);
       }).toThrow(ArithmeticError);
     });
 
     it('throws ArithmeticError when the second argument is NaN', () => {
       expect(() => {
-        Arithmetic.gcd(16, NaN);
+        Arithmetic.gcd(16, Number.NaN);
       }).toThrow(ArithmeticError);
     });
 
@@ -155,7 +155,7 @@ describe('Arithmetic', () => {
   describe('inverse', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
-        Arithmetic.inverse(NaN);
+        Arithmetic.inverse(Number.NaN);
       }).toThrow(ArithmeticError);
     });
 
@@ -193,13 +193,13 @@ describe('Arithmetic', () => {
 
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
-        Arithmetic.lcm(NaN, 5);
+        Arithmetic.lcm(Number.NaN, 5);
       }).toThrow(ArithmeticError);
     });
 
     it('throws ArithmeticError when the second argument is NaN', () => {
       expect(() => {
-        Arithmetic.lcm(5, NaN);
+        Arithmetic.lcm(5, Number.NaN);
       }).toThrow(ArithmeticError);
     });
 
@@ -220,10 +220,10 @@ describe('Arithmetic', () => {
 
     it('throws ArithmeticError when either argument is NaN', () => {
       expect(() => {
-        Arithmetic.lcm(2, NaN);
+        Arithmetic.lcm(2, Number.NaN);
       }).toThrow(ArithmeticError);
       expect(() => {
-        Arithmetic.lcm(NaN, 5);
+        Arithmetic.lcm(Number.NaN, 5);
       }).toThrow(ArithmeticError);
     });
 
@@ -272,20 +272,20 @@ describe('Arithmetic', () => {
     });
 
     it('returns NaN when the argument is NaN', () => {
-      expect(Arithmetic.negate(NaN)).toBe(NaN);
+      expect(Arithmetic.negate(Number.NaN)).toBe(Number.NaN);
     });
   });
 
   describe('permutation', () => {
     it('throws ArithmeticError when the first argument is NaN', () => {
       expect(() => {
-        Arithmetic.permutation(NaN, 16);
+        Arithmetic.permutation(Number.NaN, 16);
       }).toThrow(ArithmeticError);
     });
 
     it('throws ArithmeticError when the second argument is NaN', () => {
       expect(() => {
-        Arithmetic.permutation(24, NaN);
+        Arithmetic.permutation(24, Number.NaN);
       }).toThrow(ArithmeticError);
     });
 

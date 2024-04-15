@@ -1,4 +1,4 @@
-import { ObjectLiteral } from '@jamashita/anden/type';
+import type { ObjectLiteral } from '@jamashita/anden/type';
 import { JSONA } from '../JSONA.js';
 import { JSONAError } from '../JSONAError.js';
 
@@ -50,6 +50,7 @@ describe('JSONA', () => {
       const obj1: ObjectLiteral = {};
       const obj2: ObjectLiteral = { obj1 };
 
+      // biome-ignore lint/complexity/useLiteralKeys: <explanation>
       obj1['obj2'] = obj2;
 
       await expect(JSONA.stringify(obj1)).rejects.toThrow(JSONAError);

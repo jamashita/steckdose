@@ -1,4 +1,5 @@
-import { Opportunity } from './Opportunity.js';
+import { ExhaustiveError } from '@jamashita/anden';
+import type { Opportunity } from './Opportunity.js';
 
 type CompositeOperator = 'and' | 'or' | 'xor';
 
@@ -24,9 +25,11 @@ export class CompositeOpportunity implements Opportunity {
       case 'or': {
         return leftHappens || rightHappens;
       }
-      case 'xor':
-      default: {
+      case 'xor': {
         return (leftHappens || rightHappens) && !(leftHappens && rightHappens);
+      }
+      default: {
+        throw new ExhaustiveError(this.operator);
       }
     }
   }

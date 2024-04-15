@@ -1,4 +1,4 @@
-import { Opportunity } from './Opportunity.js';
+import type { Opportunity } from './Opportunity.js';
 
 export class NegationOpportunity implements Opportunity {
   private readonly opportunity: Opportunity;
