@@ -1,5 +1,5 @@
 import { Random } from '../random/index.js';
-import { Opportunity } from './Opportunity.js';
+import type { Opportunity } from './Opportunity.js';
 
 export class FractionOpportunity implements Opportunity {
   private readonly numerator: number;

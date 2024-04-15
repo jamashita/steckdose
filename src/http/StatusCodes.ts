@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace StatusCodes {
   export const CONTINUE = 100;
   export const SWITCHING_PROTOCOLS = 101;
@@ -67,5 +66,3 @@ export namespace StatusCodes {
   export const NOT_EXTENDED = 510;
   export const NETWORK_AUTHENTICATION_REQUIRED = 511;
 }
-
-

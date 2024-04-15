@@ -1,10 +1,11 @@
-import { Mock } from 'vitest';
+import type { Mock } from 'vitest';
 import { Delay } from '../Delay.js';
 
 describe('Delay', () => {
   describe('debounce', () => {
     it('only calls the callback once after multiple calls within the delay period', async () => {
       const fn: Mock = vi.fn();
+      // biome-ignore lint/complexity/noBannedTypes: <explanation>
       const debounced: Function = Delay.debounce(fn, 100);
 
       debounced();
@@ -20,6 +21,7 @@ describe('Delay', () => {
 
     it('calls the callback function twice when it is repeatedly called after the specified delay time', async () => {
       const fn: Mock = vi.fn();
+      // biome-ignore lint/complexity/noBannedTypes: <explanation>
       const debounced: Function = Delay.debounce(fn, 100);
 
       debounced();
@@ -34,9 +36,10 @@ describe('Delay', () => {
   describe('throttle', () => {
     it('calls the callback function once when it is repeatedly called', () => {
       const fn: Mock = vi.fn();
+      // biome-ignore lint/complexity/noBannedTypes: <explanation>
       const throttled: Function = Delay.throttle(fn, 100);
 
-      for (let i: number = 0; i < 10; i++) {
+      for (let i = 0; i < 10; i++) {
         throttled();
       }
 
@@ -45,6 +48,7 @@ describe('Delay', () => {
 
     it('calls the callback function after the specified delay time', async () => {
       const fn: Mock = vi.fn();
+      // biome-ignore lint/complexity/noBannedTypes: <explanation>
       const throttled: Function = Delay.throttle(fn, 100);
 
       throttled();
@@ -55,6 +59,7 @@ describe('Delay', () => {
 
     it('calls the callback function twice when it is repeatedly called after the specified delay time', async () => {
       const fn: Mock = vi.fn();
+      // biome-ignore lint/complexity/noBannedTypes: <explanation>
       const throttled: Function = Delay.throttle(fn, 100);
 
       throttled();

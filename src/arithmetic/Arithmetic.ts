@@ -2,21 +2,22 @@ import { Kind } from '@jamashita/anden/type';
 import { Random, RandomError } from '../random/index.js';
 import { ArithmeticError } from './ArithmeticError.js';
 
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class Arithmetic {
-  public static average(iterable: Iterable<number>): number {
+export namespace Arithmetic {
+  export const average = (iterable: Iterable<number>): number => {
     const arr: Array<number> = [...iterable];
 
     if (arr.length === 0) {
       throw new ArithmeticError('ITERABLE MUST NOT BE EMPTY');
     }
 
-    return arr.reduce((num1: number, num2: number) => {
-      return num1 + num2;
-    }, 0) / arr.length;
-  }
+    return (
+      arr.reduce((num1: number, num2: number) => {
+        return num1 + num2;
+      }, 0) / arr.length
+    );
+  };
 
-  public static combination(n: number, m: number): number {
+  export const combination = (n: number, m: number): number => {
     if (n === m || m === 0) {
       return 1;
     }
@@ -28,19 +29,19 @@ export class Arithmetic {
     }
 
     return Arithmetic.permutation(n, m) / Arithmetic.factorial(m);
-  }
+  };
 
-  public static deviation(iterable: Iterable<number>): number {
+  export const deviation = (iterable: Iterable<number>): number => {
     const va: number = Arithmetic.variance(iterable);
 
     return Math.sqrt(va);
-  }
+  };
 
   /**
    * n! = n * (n - 1) * (n - 2) * ... * 1
    * @param n
    */
-  public static factorial(n: number): number {
+  export const factorial = (n: number): number => {
     if (!Kind.isInteger(n)) {
       throw new ArithmeticError(`n MUST BE INTEGER: ${n as unknown as string}`);
     }
@@ -52,27 +53,26 @@ export class Arithmetic {
     }
 
     return n * Arithmetic.factorial(n - 1);
-  }
+  };
 
   /**
    * returns min <= x < max
    * @param min
    * @param max
    */
-  public static float(min: number, max: number): number {
+  export const float = (min: number, max: number): number => {
     try {
       return Random.float(min, max);
-    }
-    catch (e: unknown) {
+    } catch (e: unknown) {
       if (e instanceof RandomError) {
         throw new ArithmeticError(e.message, e);
       }
 
       throw e;
     }
-  }
+  };
 
-  public static gcd(n: number, m: number): number {
+  export const gcd = (n: number, m: number): number => {
     if (!Kind.isInteger(n) || !Kind.isInteger(m)) {
       throw new ArithmeticError(`greater AND less MUST BE INTEGER: ${n}, ${m}`);
     }
@@ -87,27 +87,26 @@ export class Arithmetic {
     }
 
     return Arithmetic.gcd(m, n % m);
-  }
+  };
 
   /**
    * returns min <= x <= max
    * @param min
    * @param max
    */
-  public static integer(min: number, max: number): number {
+  export const integer = (min: number, max: number): number => {
     try {
       return Random.integer(min, max);
-    }
-    catch (e: unknown) {
+    } catch (e: unknown) {
       if (e instanceof RandomError) {
         throw new ArithmeticError(e.message, e);
       }
 
       throw e;
     }
-  }
+  };
 
-  public static inverse(num: number): number {
+  export const inverse = (num: number): number => {
     if (Kind.isNaN(num)) {
       throw new ArithmeticError('NaN IS NOT INVERTIBLE');
     }
@@ -116,17 +115,17 @@ export class Arithmetic {
     }
 
     return 1 / num;
-  }
+  };
 
-  public static lcm(n: number, m: number): number {
+  export const lcm = (n: number, m: number): number => {
     if (n === 0 || m === 0) {
       return 0;
     }
 
-    return n / Arithmetic.gcd(n, m) * m;
-  }
+    return (n / Arithmetic.gcd(n, m)) * m;
+  };
 
-  public static median(iterable: Iterable<number>): number {
+  export const median = (iterable: Iterable<number>): number => {
     const arr: Array<number> = [...iterable];
 
     if (arr.length === 0) {
@@ -138,19 +137,19 @@ export class Arithmetic {
     });
 
     if (sorted.length % 2 === 0) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion,@typescript-eslint/no-extra-parens
-      return (sorted[sorted.length / 2]! + sorted[(sorted.length / 2) - 1]!) / 2;
+      // biome-ignore lint/style/noNonNullAssertion: <explanation>
+      return (sorted[sorted.length / 2]! + sorted[sorted.length / 2 - 1]!) / 2;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    // biome-ignore lint/style/noNonNullAssertion: <explanation>
     return sorted[Math.floor(sorted.length / 2)]!;
-  }
+  };
 
-  public static negate(num: number): number {
+  export const negate = (num: number): number => {
     return 0 - num;
-  }
+  };
 
-  public static permutation(n: number, m: number): number {
+  export const permutation = (n: number, m: number): number => {
     if (!Kind.isInteger(n) || !Kind.isInteger(m)) {
       throw new ArithmeticError(`n AND m MUST BE INTEGER: ${n}, ${m}`);
     }
@@ -161,29 +160,30 @@ export class Arithmetic {
       throw new ArithmeticError(`n MUST BE GREATER THAN OR EQUAL TO m: ${n}, ${m}`);
     }
 
-    let prod: number = 1;
+    let prod = 1;
 
     for (let i: number = n; i > n - m; i--) {
       prod *= i;
     }
 
     return prod;
-  }
+  };
 
   /**
    * returns 0 <= x < 1
    */
-  public static random(): number {
+  export const random = (): number => {
     return Random.random();
-  }
+  };
 
-  public static variance(iterable: Iterable<number>): number {
+  export const variance = (iterable: Iterable<number>): number => {
     const avg: number = Arithmetic.average(iterable);
     const arr: Array<number> = [...iterable];
 
-    return arr.reduce((num1: number, num2: number) => {
-      // eslint-disable-next-line @typescript-eslint/no-extra-parens
-      return num1 + ((num2 - avg) * (num2 - avg));
-    }, 0) / arr.length;
-  }
+    return (
+      arr.reduce((num1: number, num2: number) => {
+        return num1 + (num2 - avg) * (num2 - avg);
+      }, 0) / arr.length
+    );
+  };
 }

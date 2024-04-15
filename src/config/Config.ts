@@ -1,6 +1,6 @@
-import { Kind, PlainObject, PlainObjectItem, Undefinable } from '@jamashita/anden/type';
-import fs from 'fs';
-import path from 'path';
+import { Kind, type PlainObject, type PlainObjectItem, type Undefinable } from '@jamashita/anden/type';
+import fs from 'node:fs';
+import path from 'node:path';
 import YAML from 'yaml';
 import { ConfigError } from './ConfigError.js';
 
@@ -45,8 +45,7 @@ export class Config {
       this.cache.set(property, v);
 
       return true;
-    }
-    catch {
+    } catch {
       return false;
     }
   }
@@ -55,9 +54,7 @@ export class Config {
     const cwd: string = process.cwd();
     const jsonFile: string = path.join(cwd, dir, `${env}.json`);
 
-    // eslint-disable-next-line node/no-sync
     if (fs.existsSync(jsonFile)) {
-      // eslint-disable-next-line node/no-sync
       const json: string = fs.readFileSync(jsonFile, 'utf8');
 
       return JSON.parse(json) as PlainObject;
@@ -65,9 +62,7 @@ export class Config {
 
     const ymlFile: string = path.join(cwd, dir, `${env}.yml`);
 
-    // eslint-disable-next-line node/no-sync
     if (fs.existsSync(ymlFile)) {
-      // eslint-disable-next-line node/no-sync
       const yml: string = fs.readFileSync(ymlFile, 'utf8');
 
       return YAML.parse(yml) as PlainObject;
@@ -75,9 +70,7 @@ export class Config {
 
     const yamlFile: string = path.join(cwd, dir, `${env}.yaml`);
 
-    // eslint-disable-next-line node/no-sync
     if (fs.existsSync(yamlFile)) {
-      // eslint-disable-next-line node/no-sync
       const yaml: string = fs.readFileSync(yamlFile, 'utf8');
 
       return YAML.parse(yaml) as PlainObject;
@@ -89,8 +82,7 @@ export class Config {
   private loadDefault(dir: string): PlainObject {
     try {
       return this.load(dir, 'default');
-    }
-    catch (e: unknown) {
+    } catch (e: unknown) {
       if (e instanceof ConfigError) {
         return {};
       }
@@ -118,8 +110,7 @@ export class Config {
     }
 
     const [element, ...rest] = elements;
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const key: string = element!;
+    const key: string = element as string;
     // @ts-expect-error
     const v: Undefinable<PlainObjectItem> = value[key] as Undefinable<PlainObjectItem>;
 
@@ -131,4 +122,5 @@ export class Config {
   }
 }
 
+// biome-ignore lint/complexity/useLiteralKeys: <explanation>
 export const config: Config = new Config(process.env['CONFIG_DIR'] ?? 'config', process.env['NODE_ENV'] ?? 'development');

@@ -6,13 +6,13 @@ describe('Random', () => {
   describe('float', () => {
     it('throws RandomError when min is NaN', () => {
       expect(() => {
-        Random.float(NaN, 1.2);
+        Random.float(Number.NaN, 1.2);
       }).toThrow(RandomError);
     });
 
     it('throws RandomError when max is NaN', () => {
       expect(() => {
-        Random.float(1.2, NaN);
+        Random.float(1.2, Number.NaN);
       }).toThrow(RandomError);
     });
 
@@ -27,7 +27,7 @@ describe('Random', () => {
     });
 
     it('returns the same value when min == max', () => {
-      for (let i: number = 0; i < 100; i++) {
+      for (let i = 0; i < 100; i++) {
         expect(Random.float(10_000.08, 10_000.08)).toBe(10_000.08);
       }
     });
@@ -36,14 +36,16 @@ describe('Random', () => {
       const min: number = 1.006;
       const max: number = 10.3;
 
-      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
-        return Promise.resolve(Random.float(min, max));
-      }).map(async (promise: Promise<number>) => {
-        const v: number = await promise;
+      const arr: Array<Promise<void>> = sequence(10_000)
+        .map(() => {
+          return Promise.resolve(Random.float(min, max));
+        })
+        .map(async (promise: Promise<number>) => {
+          const v: number = await promise;
 
-        expect(v).toBeGreaterThanOrEqual(min);
-        expect(v).toBeLessThan(max);
-      });
+          expect(v).toBeGreaterThanOrEqual(min);
+          expect(v).toBeLessThan(max);
+        });
 
       return Promise.all(arr);
     });
@@ -64,13 +66,13 @@ describe('Random', () => {
 
     it('throws RandomError when min is NaN', () => {
       expect(() => {
-        Random.integer(NaN, 1);
+        Random.integer(Number.NaN, 1);
       }).toThrow(RandomError);
     });
 
     it('throws RandomError when max is NaN', () => {
       expect(() => {
-        Random.integer(0, NaN);
+        Random.integer(0, Number.NaN);
       }).toThrow(RandomError);
     });
 
@@ -85,7 +87,7 @@ describe('Random', () => {
     });
 
     it('returns the same value when min == max', () => {
-      for (let i: number = 0; i < 100; i++) {
+      for (let i = 0; i < 100; i++) {
         expect(Random.integer(10_000, 10_000)).toBe(10_000);
       }
     });
@@ -94,14 +96,16 @@ describe('Random', () => {
       const min: number = 1;
       const max: number = 100;
 
-      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
-        return Promise.resolve(Random.integer(min, max));
-      }).map(async (promise: Promise<number>) => {
-        const v: number = await promise;
+      const arr: Array<Promise<void>> = sequence(10_000)
+        .map(() => {
+          return Promise.resolve(Random.integer(min, max));
+        })
+        .map(async (promise: Promise<number>) => {
+          const v: number = await promise;
 
-        expect(v).toBeGreaterThanOrEqual(min);
-        expect(v).toBeLessThanOrEqual(max);
-      });
+          expect(v).toBeGreaterThanOrEqual(min);
+          expect(v).toBeLessThanOrEqual(max);
+        });
 
       return Promise.all(arr);
     });
@@ -111,7 +115,7 @@ describe('Random', () => {
     it('picks a random element from the iterable', () => {
       const iterable: Array<number> = [1, 2, 3, 4, 5];
 
-      for (let i: number = 0; i < 10_000; i++) {
+      for (let i = 0; i < 10_000; i++) {
         expect(iterable).toContain(Random.pick(iterable));
       }
     });
@@ -125,14 +129,16 @@ describe('Random', () => {
 
   describe('random', () => {
     it('returns 0 <= x < 1', () => {
-      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
-        return Promise.resolve(Random.random());
-      }).map(async (promise: Promise<number>) => {
-        const v: number = await promise;
+      const arr: Array<Promise<void>> = sequence(10_000)
+        .map(() => {
+          return Promise.resolve(Random.random());
+        })
+        .map(async (promise: Promise<number>) => {
+          const v: number = await promise;
 
-        expect(v).toBeGreaterThanOrEqual(0);
-        expect(v).toBeLessThan(1);
-      });
+          expect(v).toBeGreaterThanOrEqual(0);
+          expect(v).toBeLessThan(1);
+        });
 
       return Promise.all(arr);
     });
@@ -141,14 +147,16 @@ describe('Random', () => {
   describe('string', () => {
     it('returns specified length alphabetical string', () => {
       const length: number = 10;
-      const arr: Array<Promise<void>> = sequence(10_000).map(() => {
-        return Promise.resolve(Random.string(length));
-      }).map(async (promise: Promise<string>) => {
-        const v: string = await promise;
+      const arr: Array<Promise<void>> = sequence(10_000)
+        .map(() => {
+          return Promise.resolve(Random.string(length));
+        })
+        .map(async (promise: Promise<string>) => {
+          const v: string = await promise;
 
-        expect(v.length).toBe(length);
-        expect(v).toMatch(/[a-zA-Z]+/u);
-      });
+          expect(v.length).toBe(length);
+          expect(v).toMatch(/[a-zA-Z]+/u);
+        });
 
       return Promise.all(arr);
     });
