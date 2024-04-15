@@ -9,7 +9,7 @@ describe('Tokenizer', () => {
 
       expect(tokenizer.count()).toBe(4);
 
-      let i: number = 0;
+      let i = 0;
 
       for (const s of tokenizer) {
         switch (i) {
@@ -28,7 +28,6 @@ describe('Tokenizer', () => {
 
             break;
           }
-          case 3:
           default: {
             expect(s).toBe('2');
 
@@ -71,7 +70,7 @@ describe('Tokenizer', () => {
 
       expect(tokenizer.count()).toBe(4);
 
-      let i: number = 0;
+      let i = 0;
 
       for (const s of tokenizer) {
         switch (i) {
@@ -90,7 +89,6 @@ describe('Tokenizer', () => {
 
             break;
           }
-          case 3:
           default: {
             expect(s).toBe('2');
 

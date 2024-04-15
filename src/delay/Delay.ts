@@ -1,11 +1,10 @@
-import { AnyFunction, Kind, Nullable } from '@jamashita/anden/type';
+import { type AnyFunction, Kind, type Nullable } from '@jamashita/anden/type';
 import { Random } from '../random/index.js';
 
 type NoReturn<T extends AnyFunction> = (args: Parameters<T>) => void;
 
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class Delay {
-  public static debounce<T extends AnyFunction>(callback: T, delay: number): NoReturn<T> {
+export namespace Delay {
+  export const debounce = <T extends AnyFunction>(callback: T, delay: number): NoReturn<T> => {
     let id: Nullable<NodeJS.Timeout> = null;
 
     return (...args: Array<unknown>) => {
@@ -17,15 +16,15 @@ export class Delay {
         callback(...args);
       }, delay);
     };
-  }
+  };
 
-  public static randomWait(minMS: number, maxMS: number): Promise<void> {
+  export const randomWait = (minMS: number, maxMS: number): Promise<void> => {
     const u: number = Random.integer(minMS, maxMS);
 
     return Delay.wait(u);
-  }
+  };
 
-  public static throttle<T extends AnyFunction>(callback: T, delay: number): NoReturn<T> {
+  export const throttle = <T extends AnyFunction>(callback: T, delay: number): NoReturn<T> => {
     let id: Nullable<NodeJS.Timeout> = null;
 
     return (...args: Array<unknown>) => {
@@ -36,17 +35,14 @@ export class Delay {
         }, delay);
       }
     };
-  }
+  };
 
-  public static wait(ms: number): Promise<void> {
-    return new Promise((resolve: (value: (void)) => void) => {
+  export const wait = (ms: number): Promise<void> => {
+    // biome-ignore lint/suspicious/noConfusingVoidType: <explanation>
+    return new Promise((resolve: (value: void) => void) => {
       setTimeout(() => {
         resolve();
       }, ms);
     });
-  }
-
-  private constructor() {
-    // NOOP
-  }
+  };
 }

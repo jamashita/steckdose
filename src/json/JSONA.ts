@@ -1,15 +1,13 @@
-import { ObjectLiteral, Reject, Resolve } from '@jamashita/anden/type';
+import type { ObjectLiteral, Reject, Resolve } from '@jamashita/anden/type';
 import { JSONAError } from './JSONAError.js';
 
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class JSONA {
-  public static parse<T extends ObjectLiteral = ObjectLiteral>(text: string): Promise<T> {
+export namespace JSONA {
+  export const parse = <T extends ObjectLiteral = ObjectLiteral>(text: string): Promise<T> => {
     return new Promise((resolve: Resolve<T>, reject: Reject) => {
       queueMicrotask(() => {
         try {
           resolve(JSON.parse(text) as T);
-        }
-        catch (err: unknown) {
+        } catch (err: unknown) {
           if (err instanceof Error) {
             reject(new JSONAError(err));
 
@@ -20,15 +18,14 @@ export class JSONA {
         }
       });
     });
-  }
+  };
 
-  public static stringify(value: ObjectLiteral): Promise<string> {
+  export const stringify = (value: ObjectLiteral): Promise<string> => {
     return new Promise((resolve: Resolve<string>, reject: Reject) => {
       queueMicrotask(() => {
         try {
           resolve(JSON.stringify(value));
-        }
-        catch (err: unknown) {
+        } catch (err: unknown) {
           if (err instanceof Error) {
             reject(new JSONAError(err));
 
@@ -39,9 +36,5 @@ export class JSONA {
         }
       });
     });
-  }
-
-  private constructor() {
-    // NOOP
-  }
+  };
 }
