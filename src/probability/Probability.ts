@@ -1,6 +1,6 @@
 import { CompositeOpportunity } from './CompositeOpportunity.js';
 import { NegationOpportunity } from './NegationOpportunity.js';
-import { Opportunity } from './Opportunity.js';
+import type { Opportunity } from './Opportunity.js';
 
 export class Probability implements Opportunity {
   private readonly opportunity: Opportunity;
